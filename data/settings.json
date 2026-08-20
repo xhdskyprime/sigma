@@ -1,0 +1,26 @@
+{
+  "emailSender": "umpegrsud3raksa@gmail.com",
+  "emailPassword": "zymi fjyj xnlv xbbz",
+  "emailRecipients": [
+    "xhdprime@gmail.com"
+  ],
+  "emailSchedule": "11:21",
+  "users": [
+    {
+      "id": 1,
+      "role": "admin",
+      "username": "admin",
+      "password": "$2b$10$VRvCamr4P/X.oae3xb5oeOTQDj.298pPr1Gx/mBYq7ELuP7.VmjGi",
+      "name": "Admin RSUD",
+      "initial": "AD"
+    },
+    {
+      "id": 2,
+      "role": "direktur",
+      "username": "direktur",
+      "password": "$2b$10$5ZPn85rVR03TRxOOfXX3X.LaS3.wOI0EQ7N2zjnK.XaDCHdE9e95.",
+      "name": "Direktur RSUD",
+      "initial": "DR"
+    }
+  ]
+}

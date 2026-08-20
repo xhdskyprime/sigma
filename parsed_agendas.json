@@ -1,0 +1,2189 @@
+[
+  {
+    "id": 1,
+    "title": "KEGIATAN",
+    "date": "TANGGAL",
+    "timeStart": "08:00",
+    "timeEnd": "08:00",
+    "location": "TEMPAT",
+    "pic": "PEJABAT/\nPETUGAS HADIR",
+    "unit": "Pelayanan",
+    "attendees": "PEJABAT/\nPETUGAS HADIR",
+    "category": "Pelayanan",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-yellow)",
+    "catColor": "var(--color-cat-yellow)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Sudah Selesai",
+      "notaDinas": "Belum Dibuat",
+      "status": "Belum Lengkap",
+      "statusColor": "var(--color-status-yellow)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": "FILE UNDANGAN",
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 2,
+    "title": "Undangan Kegiatan Evaluasi Penatausahaan Semester\r\nI Tahun Anggaran 2026",
+    "date": "2026-06-25",
+    "timeStart": "00:00",
+    "timeEnd": "12:00",
+    "location": "The Grantage Hotel & Sky Lounge",
+    "pic": "Ika Heri Septiyani",
+    "unit": "Pelayanan",
+    "attendees": "Ika Heri Septiyani,S.M, Shelva",
+    "category": "Pelayanan",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-yellow)",
+    "catColor": "var(--color-cat-yellow)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 3,
+    "title": "Undangan Kegiatan Evaluasi Penatausahaan Semester\r\nI Tahun Anggaran 2026",
+    "date": "2026-06-26",
+    "timeStart": "00:00",
+    "timeEnd": "12:00",
+    "location": "The Grantage Hotel & Sky Lounge",
+    "pic": "Ika Heri Septiyani",
+    "unit": "Pelayanan",
+    "attendees": "Ika Heri Septiyani,S.M, Shelva",
+    "category": "Pelayanan",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-yellow)",
+    "catColor": "var(--color-cat-yellow)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 4,
+    "title": "Bimbingan Teknis Reflikasi, Kerjasama, dan HAKI Tahun 2026",
+    "date": "2026-06-26",
+    "timeStart": "00:00",
+    "timeEnd": "12:00",
+    "location": "Lemo Hotel Serpong",
+    "pic": "Muhammad Rae Febrian",
+    "unit": "Pelayanan",
+    "attendees": "Muhammad Rae Febrian, SKM",
+    "category": "Pelayanan",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-yellow)",
+    "catColor": "var(--color-cat-yellow)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 5,
+    "title": "Pelatihan Pengelolaan Arsip Dinamis",
+    "date": "2026-06-26",
+    "timeStart": "00:00",
+    "timeEnd": "12:00",
+    "location": "Daring",
+    "pic": "FADIA ASYA ZAHARANI",
+    "unit": "Pelayanan",
+    "attendees": "FADIA ASYA ZAHARANI, A.Md., Ak.",
+    "category": "Pelayanan",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-yellow)",
+    "catColor": "var(--color-cat-yellow)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 6,
+    "title": "Fun Bike dalam rangka kegiatan HUT Bhayangkara ke-80 Polresta Tangerang",
+    "date": "2026-06-27",
+    "timeStart": "00:00",
+    "timeEnd": "12:00",
+    "location": "Alun-alun Tigaraksa, Puspem Kab. Tangerang",
+    "pic": "dr. Muhammad Faridzi Fikri",
+    "unit": "Pelayanan",
+    "attendees": "dr. Muhammad Faridzi Fikri,MKM, H.Sudin Wahyudin,SKM,M.I.P",
+    "category": "Pelayanan",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-yellow)",
+    "catColor": "var(--color-cat-yellow)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 7,
+    "title": "Peringatan Hari Keluarga Nasional ke-33 Tingkat Kabupaten Tangerang Tahun 2026",
+    "date": "2026-06-29",
+    "timeStart": "00:00",
+    "timeEnd": "12:00",
+    "location": "GSG Kabupaten Tangerang",
+    "pic": "dr. Muhammad Faridzi Fikri",
+    "unit": "Pelayanan",
+    "attendees": "dr. Muhammad Faridzi Fikri,MKM",
+    "category": "Pelayanan",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-yellow)",
+    "catColor": "var(--color-cat-yellow)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 8,
+    "title": "Rapat Revisi Rancangan Akhir Rencana Kerja Perangkat\nDaerah (Ranhir Renja-PD) Tahun 2027 pada Aplikasi SIPD\n",
+    "date": "2026-06-29",
+    "timeStart": "00:00",
+    "timeEnd": "12:00",
+    "location": "Hotel Vega",
+    "pic": "HENNY",
+    "unit": "Direksi",
+    "attendees": "HENNY, S.Kep.,Ns.,M.M., Zoraida Kartini Putri, AM.Keb",
+    "category": "Direksi",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-blue)",
+    "catColor": "var(--color-cat-blue)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 9,
+    "title": "Undangan Rapat Pembahasan Hasil Verifikasi Renbut Kemenkes Tahun 2026",
+    "date": "2026-06-29",
+    "timeStart": "00:00",
+    "timeEnd": "12:00",
+    "location": "Ruang Rapat BKPSDM",
+    "pic": "MURNALISA DANI",
+    "unit": "Direksi",
+    "attendees": "MURNALISA DANI,SAP,M.Si, Alexand Ramadhan,SE",
+    "category": "Direksi",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-blue)",
+    "catColor": "var(--color-cat-blue)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 10,
+    "title": "Pelatihan Pengelolaan Arsip Dinamis",
+    "date": "2026-06-29",
+    "timeStart": "00:00",
+    "timeEnd": "12:00",
+    "location": "Daring",
+    "pic": "FADIA ASYA ZAHARANI",
+    "unit": "Pelayanan",
+    "attendees": "FADIA ASYA ZAHARANI, A.Md., Ak.",
+    "category": "Pelayanan",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-yellow)",
+    "catColor": "var(--color-cat-yellow)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 11,
+    "title": "Tangerang Investment Award",
+    "date": "2026-06-30",
+    "timeStart": "00:00",
+    "timeEnd": "12:00",
+    "location": "Hotel Atria",
+    "pic": "dr. Muhammad Faridzi Fikri",
+    "unit": "Pelayanan",
+    "attendees": "dr. Muhammad Faridzi Fikri,MKM",
+    "category": "Pelayanan",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-yellow)",
+    "catColor": "var(--color-cat-yellow)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 12,
+    "title": "Pelatihan Pengelolaan Arsip Dinamis",
+    "date": "2026-06-30",
+    "timeStart": "00:00",
+    "timeEnd": "12:00",
+    "location": "Gd. Diklat Kitri Bhakti",
+    "pic": "FADIA ASYA ZAHARANI",
+    "unit": "Pelayanan",
+    "attendees": "FADIA ASYA ZAHARANI, A.Md., Ak.",
+    "category": "Pelayanan",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-yellow)",
+    "catColor": "var(--color-cat-yellow)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 13,
+    "title": "Asistensi Randis Kabupaten Tangerang",
+    "date": "2026-07-01",
+    "timeStart": "00:00",
+    "timeEnd": "12:00",
+    "location": "Ruang Rapat BBNKB Bapenda Provinsi Banten",
+    "pic": "MURNALISA DANI",
+    "unit": "Pelayanan",
+    "attendees": "MURNALISA DANI,SAP,M.Si, Abdul Mukti",
+    "category": "Pelayanan",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-yellow)",
+    "catColor": "var(--color-cat-yellow)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 14,
+    "title": "FGD Penyusunan Rencana Aksi Daerah Kabupaten Layak Anak (RAD KLA)",
+    "date": "2026-07-01",
+    "timeStart": "00:00",
+    "timeEnd": "12:00",
+    "location": "Aula Bappenda",
+    "pic": "HENNY",
+    "unit": "Pelayanan",
+    "attendees": "HENNY, S.Kep.,Ns.,M.M.",
+    "category": "Pelayanan",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-yellow)",
+    "catColor": "var(--color-cat-yellow)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 15,
+    "title": "Rapat Pembahasan\r\nHasil Verifikasi Rencana Kebutuhan\r\n(Renbut) Kemenkes Tahun 2026",
+    "date": "2026-07-02",
+    "timeStart": "00:00",
+    "timeEnd": "12:00",
+    "location": "Ruang Rapat BKPSDM",
+    "pic": "MURNALISA DANI",
+    "unit": "Direksi",
+    "attendees": "MURNALISA DANI,SAP,M.Si, Alexand Ramadhan,SE",
+    "category": "Direksi",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-blue)",
+    "catColor": "var(--color-cat-blue)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 16,
+    "title": "Bimtek Penginputan Aplikasi SI RISDA",
+    "date": "2026-07-02",
+    "timeStart": "00:00",
+    "timeEnd": "12:00",
+    "location": "Harris Hotel & Convention Serpong",
+    "pic": "Muhammad Rae Febrian",
+    "unit": "Pelayanan",
+    "attendees": "Muhammad Rae Febrian, SKM",
+    "category": "Pelayanan",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-yellow)",
+    "catColor": "var(--color-cat-yellow)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 17,
+    "title": "Launching Payment Point (Layanan Pembayaran Pajak Kendaraan Bermotor (PKB)",
+    "date": "2026-07-02",
+    "timeStart": "13:30",
+    "timeEnd": "12:00",
+    "location": "Kantor Kecamatan Curug",
+    "pic": "dr. Muhammad Faridzi Fikri",
+    "unit": "Pelayanan",
+    "attendees": "dr. Muhammad Faridzi Fikri,MKM",
+    "category": "Pelayanan",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-yellow)",
+    "catColor": "var(--color-cat-yellow)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 18,
+    "title": "Pelantikan Pengurus PERSI Dan MAKERSI Wilayah Banten 2026",
+    "date": "2026-07-03",
+    "timeStart": "30:00",
+    "timeEnd": "12:00",
+    "location": "Aula RS Sari Asih Serang",
+    "pic": "dr. Muhammad Faridzi Fikri",
+    "unit": "Pelayanan",
+    "attendees": "dr. Muhammad Faridzi Fikri,MKM",
+    "category": "Pelayanan",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-yellow)",
+    "catColor": "var(--color-cat-yellow)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 19,
+    "title": "Klinik Modular Merah Putih",
+    "date": "2026-07-03",
+    "timeStart": "00:00",
+    "timeEnd": "12:00",
+    "location": "Pos Modular Kesehatan Merah Putih",
+    "pic": "Aprilia Wulansari",
+    "unit": "Pelayanan",
+    "attendees": "Aprilia Wulansari, A.Md.Kep, dr.JAYADI, Ria Cahya Andriana, S.Farm.Apt",
+    "category": "Pelayanan",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-yellow)",
+    "catColor": "var(--color-cat-yellow)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 20,
+    "title": "Rapat Koordinasi Satu Data",
+    "date": "2026-07-07",
+    "timeStart": "00:00",
+    "timeEnd": "12:00",
+    "location": "Ruang Quantum Hall, Diskominfo",
+    "pic": "HENNY",
+    "unit": "Direksi",
+    "attendees": "HENNY, S.Kep.,Ns.,M.M., Tony Tristan Saputra S.Kom",
+    "category": "Direksi",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-blue)",
+    "catColor": "var(--color-cat-blue)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 21,
+    "title": "Rapat Paripurna DPRD Kabupaten Tangerang\nAgenda:\n1. Persetujuan Bersama DPRD dan Bupati terhadap Raperda tentang Pertanggungjawaban Pelaksanaan APBD Tahun Anggaran 2025;\n2. Penyampaian Bupati terhadap Rancangan KUA dan Rancangan PPAS TA 2027",
+    "date": "2026-07-07",
+    "timeStart": "10:00",
+    "timeEnd": "12:00",
+    "location": "Ruang Rapat Paripurna DPRD",
+    "pic": "dr. Muhammad Faridzi Fikri",
+    "unit": "Direksi",
+    "attendees": "dr. Muhammad Faridzi Fikri,MKM",
+    "category": "Direksi",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-blue)",
+    "catColor": "var(--color-cat-blue)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 22,
+    "title": "Evaluasi Kinerja Dinas Kesehatan dan BLUD Triwulan II Tahun 2026",
+    "date": "2026-07-08",
+    "timeStart": "08:30",
+    "timeEnd": "12:00",
+    "location": "Aula Lantai 3 Dinkes",
+    "pic": "dr. Muhammad Faridzi Fikri",
+    "unit": "Pelayanan",
+    "attendees": "dr. Muhammad Faridzi Fikri,MKM, dr.ELNI HANDAYANI,M.I.P",
+    "category": "Pelayanan",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-yellow)",
+    "catColor": "var(--color-cat-yellow)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 23,
+    "title": "Rapat Rekonsiliasi dan Evaluasi Capaian Pendapatan Asli\nDaerah dan Opsen Pajak Daerah Triwulan II Tahun Anggaran\n2026",
+    "date": "2026-07-08",
+    "timeStart": "09:30",
+    "timeEnd": "12:00",
+    "location": "Hotel Golden Tulip Essential PIK2 Jakarta",
+    "pic": "HENNY",
+    "unit": "Direksi",
+    "attendees": "HENNY, S.Kep.,Ns.,M.M., Endang Sri Rahayu, S.Kep.Ners, Nida Hanifah Amatulloh,S.E.",
+    "category": "Direksi",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-blue)",
+    "catColor": "var(--color-cat-blue)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 24,
+    "title": "Seminar Kesehatan Organ Reproduksi Wanita",
+    "date": "2026-07-08",
+    "timeStart": "08:00",
+    "timeEnd": "12:00",
+    "location": "Pendopo Kabupaten Tangerang",
+    "pic": "Istri Pak Bandi",
+    "unit": "Pelayanan",
+    "attendees": "Istri Pak Bandi",
+    "category": "Pelayanan",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-yellow)",
+    "catColor": "var(--color-cat-yellow)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 25,
+    "title": "Sosialisasi Implementasi Penyesuaian Penerbitan Surat Kontrol",
+    "date": "2026-07-09",
+    "timeStart": "09:00",
+    "timeEnd": "12:00",
+    "location": "Ruang Rapat BPJS  Kantor Cabang  Tigaraksa - Lantai 3",
+    "pic": "dr.ELNI HANDAYANI",
+    "unit": "Pelayanan",
+    "attendees": "dr.ELNI HANDAYANI,M.I.P",
+    "category": "Pelayanan",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-yellow)",
+    "catColor": "var(--color-cat-yellow)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 26,
+    "title": "Rapat Pembahasan Rancangan Peraturan Bupati tentang Pengadaan Barang dan Jasa pada BLUD Dinas Kesehatan",
+    "date": "2026-07-09",
+    "timeStart": "09:00",
+    "timeEnd": "12:00",
+    "location": "Ruang Diskusi Lantai 2 Gedung Kantor RSUD Kab Tangerang",
+    "pic": "ADE YUDI FIRMANSYAH",
+    "unit": "Direksi",
+    "attendees": "ADE YUDI FIRMANSYAH,S.Kep,MH",
+    "category": "Direksi",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-blue)",
+    "catColor": "var(--color-cat-blue)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 27,
+    "title": "Pembekalan dan Pengarahan Calon Paskibraka Kabupaten Tangerang Tahun 2026",
+    "date": "2026-07-09",
+    "timeStart": "10:00",
+    "timeEnd": "12:00",
+    "location": "Ruang Rapat Lt. 2 Kesbangpol",
+    "pic": "Dr. dr. RADEN ADJENG DEWI MARIA YULIANI",
+    "unit": "Pelayanan",
+    "attendees": "Dr. dr. RADEN ADJENG DEWI MARIA YULIANI,M.Kes",
+    "category": "Pelayanan",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-yellow)",
+    "catColor": "var(--color-cat-yellow)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 28,
+    "title": "Pembinaan Safety Driving Bagi Driver PSC 119",
+    "date": "2026-07-09",
+    "timeStart": "08:00",
+    "timeEnd": "12:00",
+    "location": "Aula Lantai 3 Dinkes Prov Banten",
+    "pic": "Firman Syah",
+    "unit": "Pelayanan",
+    "attendees": "Firman Syah",
+    "category": "Pelayanan",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-yellow)",
+    "catColor": "var(--color-cat-yellow)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 29,
+    "title": "Pembukaan dan Pembekalan Penilaian Kompetensi\r\nMetode Lainnya Computer Assissted Competency Test (CACT)",
+    "date": "2026-07-09",
+    "timeStart": "08:30",
+    "timeEnd": "12:00",
+    "location": "Daring",
+    "pic": "dr. Rora Asyulia",
+    "unit": "Pelayanan",
+    "attendees": "dr. Rora Asyulia,M.K.M, dr. Risna, Ners. Tuti Wahyuningsih, S.Kep",
+    "category": "Pelayanan",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-yellow)",
+    "catColor": "var(--color-cat-yellow)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 30,
+    "title": "Rapat Persiapan Pemantauan dan Evaluasi Kinerja Penyelenggaraan Pelayanan Publik (PEKPPP) Tahun 2026",
+    "date": "2026-07-09",
+    "timeStart": "09:00",
+    "timeEnd": "12:00",
+    "location": "Daring",
+    "pic": "MURNALISA DANI",
+    "unit": "Direksi",
+    "attendees": "MURNALISA DANI,SAP,M.Si",
+    "category": "Direksi",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-blue)",
+    "catColor": "var(--color-cat-blue)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 31,
+    "title": "Pembahasan Rancangan Peraturan Bupati tentang Standar Harga Satuan Barang Tahun Anggaran 2027",
+    "date": "2026-07-09",
+    "timeStart": "13:00",
+    "timeEnd": "12:00",
+    "location": "Ruang Rapat Biro Hukum Setda Prov Banten",
+    "pic": "HENNY",
+    "unit": "Pelayanan",
+    "attendees": "HENNY, S.Kep.,Ns.,M.M., Zoraida Kartini Putri, AM.Keb",
+    "category": "Pelayanan",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-yellow)",
+    "catColor": "var(--color-cat-yellow)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 32,
+    "title": "Workshop Kupas Tuntas Koding Klaim Kasus Jantung dan Kebidanan\r\nPada Implementasi JKN serta Analisis Rekam Medis dan Data Klaim\r\nUntuk Mendukung Keakurasian Klaim",
+    "date": "2026-07-10",
+    "timeStart": "10:00",
+    "timeEnd": "12:00",
+    "location": "Redtop Hotel & Convention Centre",
+    "pic": "SITI NURLAELA",
+    "unit": "Diklat",
+    "attendees": "SITI NURLAELA,SST",
+    "category": "Diklat",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-orange)",
+    "catColor": "var(--color-cat-orange)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 33,
+    "title": "Kunjungan Korban Kebakaran",
+    "date": "2026-07-10",
+    "timeStart": "10:00",
+    "timeEnd": "12:00",
+    "location": "TPA Jatiwaringin",
+    "pic": "dr. Muhammad Faridzi Fikri",
+    "unit": "Pelayanan",
+    "attendees": "dr. Muhammad Faridzi Fikri,MKM",
+    "category": "Pelayanan",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-yellow)",
+    "catColor": "var(--color-cat-yellow)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 34,
+    "title": "Ujian Tertulis Pemilihan Arsiparis Teladan",
+    "date": "2026-07-13",
+    "timeStart": "09:00",
+    "timeEnd": "12:00",
+    "location": "Aula Rapat Dinas Perpustakaan dan Arsip",
+    "pic": "FADIA ASYA ZAHARANI",
+    "unit": "Diklat",
+    "attendees": "FADIA ASYA ZAHARANI, A.Md., Ak.",
+    "category": "Diklat",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-orange)",
+    "catColor": "var(--color-cat-orange)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 35,
+    "title": "Rapat Pembahasan Rancangan Peraturan Bupati",
+    "date": "2026-07-13",
+    "timeStart": "09:00",
+    "timeEnd": "12:00",
+    "location": "Aula Rapat Dinas Perpustakaan dan Arsip",
+    "pic": "FADIA ASYA ZAHARANI",
+    "unit": "Direksi",
+    "attendees": "FADIA ASYA ZAHARANI, A.Md., Ak.",
+    "category": "Direksi",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-blue)",
+    "catColor": "var(--color-cat-blue)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 36,
+    "title": "Pemusnahan Arsip di Lingkungan Dinas Kesehatan",
+    "date": "2026-07-13",
+    "timeStart": "09:00",
+    "timeEnd": "12:00",
+    "location": "Aula Lantai 3 Dinkes",
+    "pic": "FADIA ASYA ZAHARANI",
+    "unit": "Pelayanan",
+    "attendees": "FADIA ASYA ZAHARANI, A.Md., Ak.",
+    "category": "Pelayanan",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-yellow)",
+    "catColor": "var(--color-cat-yellow)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 37,
+    "title": "Workshop Penganugerahan Parahita dan Perlindungan Anak",
+    "date": "2026-07-14",
+    "timeStart": "08:00",
+    "timeEnd": "12:00",
+    "location": "Ruang Rapat Bola Sundul GUD ",
+    "pic": "HENNY",
+    "unit": "Diklat",
+    "attendees": "HENNY, S.Kep.,Ns.,M.M., Zoraida Kartini Putri, AM.Keb",
+    "category": "Diklat",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-orange)",
+    "catColor": "var(--color-cat-orange)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 38,
+    "title": "Rapat Pembahasan Rancangan Peraturan Bupati",
+    "date": "2026-07-14",
+    "timeStart": "09:00",
+    "timeEnd": "12:00",
+    "location": "Aula Rapat Dinas Perpustakaan dan Arsip",
+    "pic": "FADIA ASYA ZAHARANI",
+    "unit": "Direksi",
+    "attendees": "FADIA ASYA ZAHARANI, A.Md., Ak.",
+    "category": "Direksi",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-blue)",
+    "catColor": "var(--color-cat-blue)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 39,
+    "title": "Rapat Evaluasi Penanganan Bencana Kebakaran TPA Jatiwaringin",
+    "date": "2026-07-14",
+    "timeStart": "09:00",
+    "timeEnd": "12:00",
+    "location": "Pendopo Kabupaten Tangerang",
+    "pic": "dr. Muhammad Faridzi Fikri",
+    "unit": "Direksi",
+    "attendees": "dr. Muhammad Faridzi Fikri,MKM",
+    "category": "Direksi",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-blue)",
+    "catColor": "var(--color-cat-blue)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 40,
+    "title": "Undangan Penilaian Kompetensi Metode Lainnya\nComputer Assissted Competency Test (CACT)",
+    "date": "2026-07-14",
+    "timeStart": "11:00",
+    "timeEnd": "12:00",
+    "location": "Gd. Diklat Kitri Bhakti",
+    "pic": "dr. Risna",
+    "unit": "Pelayanan",
+    "attendees": "dr. Risna, dr. Rora Asyulia,M.K.M",
+    "category": "Pelayanan",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-yellow)",
+    "catColor": "var(--color-cat-yellow)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 41,
+    "title": "Rapat Koordinasi Program Prioritas Kesehatan",
+    "date": "2026-07-14",
+    "timeStart": "13:00",
+    "timeEnd": "12:00",
+    "location": "Pendopo Kabupaten Tangerang",
+    "pic": "dr. Muhammad Faridzi Fikri",
+    "unit": "Direksi",
+    "attendees": "dr. Muhammad Faridzi Fikri,MKM",
+    "category": "Direksi",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-blue)",
+    "catColor": "var(--color-cat-blue)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 42,
+    "title": "Undangan Workshop Manajemen Data\r\nSurveilans PD3I",
+    "date": "2026-07-15",
+    "timeStart": "08:00",
+    "timeEnd": "12:00",
+    "location": "Aula Lantai 3 Dinkes Prov Banten",
+    "pic": "Firzah Dika Andria",
+    "unit": "Diklat",
+    "attendees": "Firzah Dika Andria,A.Md",
+    "category": "Diklat",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-orange)",
+    "catColor": "var(--color-cat-orange)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 43,
+    "title": "Kegiatan Validasi Data TB RS",
+    "date": "2026-07-15",
+    "timeStart": "08:00",
+    "timeEnd": "12:00",
+    "location": "Aula Puskesmas Binong",
+    "pic": "Aprilia Wulansari",
+    "unit": "Pelayanan",
+    "attendees": "Aprilia Wulansari, A.Md.Kep",
+    "category": "Pelayanan",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-yellow)",
+    "catColor": "var(--color-cat-yellow)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 44,
+    "title": "Rapat Koordinasi dan Sinkronisasi Data Rencana Pembangunan Fisik TW III TA 2026",
+    "date": "2026-07-15",
+    "timeStart": "09:00",
+    "timeEnd": "12:00",
+    "location": "Gedung Ex DPRD Kab. Tangerang",
+    "pic": "HENNY",
+    "unit": "Direksi",
+    "attendees": "HENNY, S.Kep.,Ns.,M.M., Zoraida Kartini Putri, AM.Keb, DHIO GUSTRIANDI,S.Sos",
+    "category": "Direksi",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-blue)",
+    "catColor": "var(--color-cat-blue)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 45,
+    "title": "Undangan Penilaian Kompetensi Metode Lainnya\r\nComputer Assissted Competency Test (CACT)",
+    "date": "2026-07-15",
+    "timeStart": "11:00",
+    "timeEnd": "12:00",
+    "location": "Gd. Diklat Kitri Bhakti",
+    "pic": "Ners. Tuti Wahyuningsih",
+    "unit": "Pelayanan",
+    "attendees": "Ners. Tuti Wahyuningsih, S.Kep",
+    "category": "Pelayanan",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-yellow)",
+    "catColor": "var(--color-cat-yellow)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 46,
+    "title": "Evaluasi Rumah Sakit dan PKM dalam Upaya Pencegahan dan Penanganan Penyebab Utama Kematian Ibu dan Bayi di Kabupaten Tangerang",
+    "date": "2026-07-16",
+    "timeStart": "08:30",
+    "timeEnd": "12:00",
+    "location": "Gedung DWP Kabupaten Tangerang",
+    "pic": "Agnes Sapta Desiyanti",
+    "unit": "Pelayanan",
+    "attendees": "Agnes Sapta Desiyanti,S.Tr.Keb,Bdn",
+    "category": "Pelayanan",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-yellow)",
+    "catColor": "var(--color-cat-yellow)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 47,
+    "title": "Evaluasi Capaian Pelaksanaan Program Unggulan Bupati Tangerang Periode Tahun 2025-2029",
+    "date": "2026-07-16",
+    "timeStart": "09:00",
+    "timeEnd": "12:00",
+    "location": "Hotel Yasmin Karawaci",
+    "pic": "HENNY",
+    "unit": "Pelayanan",
+    "attendees": "HENNY, S.Kep.,Ns.,M.M., Zoraida Kartini Putri, AM.Keb",
+    "category": "Pelayanan",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-yellow)",
+    "catColor": "var(--color-cat-yellow)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 48,
+    "title": "Verivikasi dan Validasi Data Alokon",
+    "date": "2026-07-16",
+    "timeStart": "09:00",
+    "timeEnd": "12:00",
+    "location": "Aula KOMPAK DPPKB",
+    "pic": "Rini Sumarni",
+    "unit": "Pelayanan",
+    "attendees": "Rini Sumarni,SST, Abdul Mukti",
+    "category": "Pelayanan",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-yellow)",
+    "catColor": "var(--color-cat-yellow)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 49,
+    "title": "Gelar Pengawasan Semester I (satu) Inspektorat Kabupaten Tangerang Tahun 2026",
+    "date": "2026-07-17",
+    "timeStart": "08:00",
+    "timeEnd": "12:00",
+    "location": "Lemo Hotel Serpong",
+    "pic": "dr. Muhammad Faridzi Fikri",
+    "unit": "Pelayanan",
+    "attendees": "dr. Muhammad Faridzi Fikri,MKM",
+    "category": "Pelayanan",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-yellow)",
+    "catColor": "var(--color-cat-yellow)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 50,
+    "title": "Sosialisasi dan Pendampingan Penginputan IGA Award",
+    "date": "2026-07-17",
+    "timeStart": "08:00",
+    "timeEnd": "12:00",
+    "location": "Lemo Hotel Serpong",
+    "pic": "Muhammad Rae Febrian",
+    "unit": "Pelayanan",
+    "attendees": "Muhammad Rae Febrian, SKM",
+    "category": "Pelayanan",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-yellow)",
+    "catColor": "var(--color-cat-yellow)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 51,
+    "title": "Rapat Paripurna DPRD Kabupaten Tangerang\nAgenda:\nPersetujuan Bersama DPRD dan Bupati terhadap Rancangan Kebijakan Umum Anggaran (KUA) dan Rancangan Prioritas Plafon Anggaran Sementara (PPAS) TA 2027",
+    "date": "2026-07-20",
+    "timeStart": "10:00",
+    "timeEnd": "12:00",
+    "location": "Ruang Rapat Paripurna DPRD",
+    "pic": "dr. Muhammad Faridzi Fikri",
+    "unit": "Direksi",
+    "attendees": "dr. Muhammad Faridzi Fikri,MKM",
+    "category": "Direksi",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-blue)",
+    "catColor": "var(--color-cat-blue)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 52,
+    "title": "Rekonsiliasi Belanja Pegawai Perubahan APBD\r\n2026",
+    "date": "2026-07-21",
+    "timeStart": "09:00",
+    "timeEnd": "12:00",
+    "location": "Lemo Hotel Serpong",
+    "pic": "HENNY",
+    "unit": "Pelayanan",
+    "attendees": "HENNY, S.Kep.,Ns.,M.M., Ika Heri Septiyani,S.M, Zoraida Kartini Putri, AM.Keb, Shelva",
+    "category": "Pelayanan",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-yellow)",
+    "catColor": "var(--color-cat-yellow)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 53,
+    "title": "Pelatihan Pelayanan Sterilisasi Tingkat Lanjut Bagi\r\nPengelola Sterilisasi di Rumah Sakit",
+    "date": "2026-07-21",
+    "timeStart": "14:00",
+    "timeEnd": "12:00",
+    "location": "Jl. Daan Mogot no. 62 Kota Tangerang, Banten",
+    "pic": "Dita Pamungkas",
+    "unit": "Pelayanan",
+    "attendees": "Dita Pamungkas, A.Md.KL",
+    "category": "Pelayanan",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-yellow)",
+    "catColor": "var(--color-cat-yellow)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 54,
+    "title": "Rapat Koordinasi Lingkup Asisten Pemerintahan dan Kesejahteraan Rakyat",
+    "date": "2026-07-22",
+    "timeStart": "08:30",
+    "timeEnd": "12:00",
+    "location": "Fame Hotel Gading Serpong",
+    "pic": "dr. Muhammad Faridzi Fikri",
+    "unit": "Direksi",
+    "attendees": "dr. Muhammad Faridzi Fikri,MKM",
+    "category": "Direksi",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-blue)",
+    "catColor": "var(--color-cat-blue)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 55,
+    "title": "Launching IPO-T Tahun 2026",
+    "date": "2026-07-22",
+    "timeStart": "12:00",
+    "timeEnd": "12:00",
+    "location": "Lemo Hotel Serpong",
+    "pic": "dr. Muhammad Faridzi Fikri",
+    "unit": "Pelayanan",
+    "attendees": "dr. Muhammad Faridzi Fikri,MKM",
+    "category": "Pelayanan",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-yellow)",
+    "catColor": "var(--color-cat-yellow)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 56,
+    "title": "Pelatihan Pelayanan Sterilisasi Tingkat Lanjut Bagi\r\nPengelola Sterilisasi di Rumah Sakit",
+    "date": "2026-07-22",
+    "timeStart": "14:00",
+    "timeEnd": "12:00",
+    "location": "Jl. Daan Mogot no. 62 Kota Tangerang, Banten",
+    "pic": "Dita Pamungkas",
+    "unit": "Pelayanan",
+    "attendees": "Dita Pamungkas, A.Md.KL",
+    "category": "Pelayanan",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-yellow)",
+    "catColor": "var(--color-cat-yellow)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 57,
+    "title": "Rapat Lanjutan Pembahasan Propemperda dan Propemperbup dengan Perangkat Daerah Pengusul Tahun 2027",
+    "date": "2026-07-23",
+    "timeStart": "09:00",
+    "timeEnd": "12:00",
+    "location": "Ruang Rapat Wareng, GUD",
+    "pic": "HENDRO SUBROTO",
+    "unit": "Direksi",
+    "attendees": "HENDRO SUBROTO,SKP,MARS",
+    "category": "Direksi",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-blue)",
+    "catColor": "var(--color-cat-blue)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 58,
+    "title": "Undangan Pembukaan Jambore Koperasi",
+    "date": "2026-07-23",
+    "timeStart": "12:30",
+    "timeEnd": "12:00",
+    "location": "Bumi Perkemahan Kitribhakti",
+    "pic": "HENNY",
+    "unit": "Pelayanan",
+    "attendees": "HENNY, S.Kep.,Ns.,M.M.",
+    "category": "Pelayanan",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-yellow)",
+    "catColor": "var(--color-cat-yellow)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 59,
+    "title": "Pelatihan Pelayanan Sterilisasi Tingkat Lanjut Bagi\r\nPengelola Sterilisasi di Rumah Sakit",
+    "date": "2026-07-23",
+    "timeStart": "14:00",
+    "timeEnd": "12:00",
+    "location": "Jl. Daan Mogot no. 62 Kota Tangerang, Banten",
+    "pic": "Dita Pamungkas",
+    "unit": "Pelayanan",
+    "attendees": "Dita Pamungkas, A.Md.KL",
+    "category": "Pelayanan",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-yellow)",
+    "catColor": "var(--color-cat-yellow)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 60,
+    "title": "Seminar Psikoedukasi: Motivasi Kerja dan Pembinaan Pegawai",
+    "date": "2026-07-23",
+    "timeStart": "08:00",
+    "timeEnd": "12:00",
+    "location": "Lemo Hotel Serpong",
+    "pic": "REZQY LAILI MUNTHARI",
+    "unit": "Pelayanan",
+    "attendees": "REZQY LAILI MUNTHARI, S.KM., Hana Novayanti, A.Md.K.L",
+    "category": "Pelayanan",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-yellow)",
+    "catColor": "var(--color-cat-yellow)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 61,
+    "title": "Pertemuan Lanjutan Sosialisasi Implementasi Penyesuaian Penerbitan Surat Kontrol",
+    "date": "2026-07-23",
+    "timeStart": "09:00",
+    "timeEnd": "12:00",
+    "location": "Daring",
+    "pic": "-",
+    "unit": "Pelayanan",
+    "attendees": "",
+    "category": "Pelayanan",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-yellow)",
+    "catColor": "var(--color-cat-yellow)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 62,
+    "title": "Sosialisasi Perbup Tangerang Nomor 57 Tahun 2025 tentang Sistem Manajemen Keamanan Informasi Sistem Pemerintahan Berbasis Elektronik",
+    "date": "2026-07-23",
+    "timeStart": "09:00",
+    "timeEnd": "12:00",
+    "location": "Hotel Yasmin Karawaci",
+    "pic": "Muhamad Lutfi",
+    "unit": "Pelayanan",
+    "attendees": "Muhamad Lutfi, S.Kom",
+    "category": "Pelayanan",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-yellow)",
+    "catColor": "var(--color-cat-yellow)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 63,
+    "title": "Pertemuan Pengkajian Audit Maternal Perinatal/Nearmiss",
+    "date": "2026-07-23",
+    "timeStart": "15:00",
+    "timeEnd": "12:00",
+    "location": "Gedung Ex DPRD Kab. Tangerang",
+    "pic": "dr. Heru Prasetyo",
+    "unit": "Pelayanan",
+    "attendees": "dr. Heru Prasetyo, Sp.OG, Dr. dr. RADEN ADJENG DEWI MARIA YULIANI,M.Kes, dr. Fikri Walimaulana Bhakti, Agnes Sapta Desiyanti,S.Tr.Keb,Bdn, Edith Friarjanti,A.Md.Keb",
+    "category": "Pelayanan",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-yellow)",
+    "catColor": "var(--color-cat-yellow)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 64,
+    "title": "Pelatihan Pelayanan Sterilisasi Tingkat Lanjut Bagi\r\nPengelola Sterilisasi di Rumah Sakit",
+    "date": "2026-07-24",
+    "timeStart": "14:00",
+    "timeEnd": "12:00",
+    "location": "Jl. Daan Mogot no. 62 Kota Tangerang, Banten",
+    "pic": "Dita Pamungkas",
+    "unit": "Pelayanan",
+    "attendees": "Dita Pamungkas, A.Md.KL",
+    "category": "Pelayanan",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-yellow)",
+    "catColor": "var(--color-cat-yellow)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 65,
+    "title": "Pelatihan Pelayanan Sterilisasi Tingkat Lanjut Bagi\r\nPengelola Sterilisasi di Rumah Sakit",
+    "date": "2026-07-25",
+    "timeStart": "14:00",
+    "timeEnd": "12:00",
+    "location": "Jl. Daan Mogot no. 62 Kota Tangerang, Banten",
+    "pic": "Dita Pamungkas",
+    "unit": "Pelayanan",
+    "attendees": "Dita Pamungkas, A.Md.KL",
+    "category": "Pelayanan",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-yellow)",
+    "catColor": "var(--color-cat-yellow)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 66,
+    "title": "Pelatihan Pelayanan Sterilisasi Tingkat Lanjut Bagi\r\nPengelola Sterilisasi di Rumah Sakit",
+    "date": "2026-07-26",
+    "timeStart": "14:00",
+    "timeEnd": "12:00",
+    "location": "Jl. Daan Mogot no. 62 Kota Tangerang, Banten",
+    "pic": "Dita Pamungkas",
+    "unit": "Pelayanan",
+    "attendees": "Dita Pamungkas, A.Md.KL",
+    "category": "Pelayanan",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-yellow)",
+    "catColor": "var(--color-cat-yellow)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 67,
+    "title": "Sosialisasi Meningkatkan Kualitas Perencanaan Pengadaan Barang/Jasa Pemerintah melalui Implementasi Peraturan LKPP Nomor 11 Tahun 2021",
+    "date": "2026-07-28",
+    "timeStart": "09:00",
+    "timeEnd": "12:00",
+    "location": "Hotel Vega",
+    "pic": "HENNY",
+    "unit": "Pelayanan",
+    "attendees": "HENNY, S.Kep.,Ns.,M.M.",
+    "category": "Pelayanan",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-yellow)",
+    "catColor": "var(--color-cat-yellow)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 68,
+    "title": "Rekonsiliasi Data dan Sosialisasi Fitur e-SLKS",
+    "date": "2026-07-28",
+    "timeStart": "09:00",
+    "timeEnd": "12:00",
+    "location": "Gd. Diklat Kitri Bhakti",
+    "pic": "MURNALISA DANI",
+    "unit": "Pelayanan",
+    "attendees": "MURNALISA DANI,SAP,M.Si, Alexand Ramadhan,SE",
+    "category": "Pelayanan",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-yellow)",
+    "catColor": "var(--color-cat-yellow)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 69,
+    "title": "Verifikasi dan Validasi Dokumen Renja PD Tahun 2027",
+    "date": "2026-07-28",
+    "timeStart": "08:30",
+    "timeEnd": "12:00",
+    "location": "Hotel Qubika",
+    "pic": "HENNY",
+    "unit": "Pelayanan",
+    "attendees": "HENNY, S.Kep.,Ns.,M.M., Zoraida Kartini Putri, AM.Keb",
+    "category": "Pelayanan",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-yellow)",
+    "catColor": "var(--color-cat-yellow)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 70,
+    "title": "Rapat Koordinasi Penyusunan Peta Jabatan PD",
+    "date": "2026-07-28",
+    "timeStart": "09:00",
+    "timeEnd": "12:00",
+    "location": "Ruang Rapat Wareng, GUD",
+    "pic": "Nurmala",
+    "unit": "Direksi",
+    "attendees": "Nurmala, SKM, Muhamad Lutfi, S.Kom",
+    "category": "Direksi",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-blue)",
+    "catColor": "var(--color-cat-blue)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 71,
+    "title": "Undangan Pertemuan Lintas Sektor",
+    "date": "2026-07-29",
+    "timeStart": "08:00",
+    "timeEnd": "12:00",
+    "location": "Mercure Tangerang BSD City",
+    "pic": "dr. Muhammad Faridzi Fikri",
+    "unit": "Pelayanan",
+    "attendees": "dr. Muhammad Faridzi Fikri,MKM",
+    "category": "Pelayanan",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-yellow)",
+    "catColor": "var(--color-cat-yellow)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 72,
+    "title": "Evaluasi Puskesmas dan Rumah Sakit dalam Pencegahan dan Pengangan Penyebab Utama Kematian Ibu dan Bayi di Kabupaten Tangerang",
+    "date": "2026-07-30",
+    "timeStart": "08:30",
+    "timeEnd": "12:00",
+    "location": "Gedung Ex DPRD Kab. Tangerang",
+    "pic": "dr. Edmundo Caesario Dwiputra",
+    "unit": "Pelayanan",
+    "attendees": "dr. Edmundo Caesario Dwiputra",
+    "category": "Pelayanan",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-yellow)",
+    "catColor": "var(--color-cat-yellow)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Sudah Selesai",
+      "notaDinas": "Belum Dibuat",
+      "status": "Belum Lengkap",
+      "statusColor": "var(--color-status-yellow)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": "SURAT UNDANGAN RUMAH SAKIT 29-30 JULI 2026.pdf",
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 73,
+    "title": "Pembahasan Draft Peraturan Bupati Tangerang tentang Penerapan Sistem Transaksi dan Pelaporan Peraturan Bupati tentang Retribusi",
+    "date": "2026-07-30",
+    "timeStart": "09:00",
+    "timeEnd": "12:00",
+    "location": "Hotel Qubika",
+    "pic": "HENNY",
+    "unit": "Pelayanan",
+    "attendees": "HENNY, S.Kep.,Ns.,M.M.",
+    "category": "Pelayanan",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-yellow)",
+    "catColor": "var(--color-cat-yellow)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Sudah Selesai",
+      "notaDinas": "Belum Dibuat",
+      "status": "Belum Lengkap",
+      "statusColor": "var(--color-status-yellow)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": "20260728104912Undangan Rapat WEB R - 30072026.pdf",
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 74,
+    "title": "Workshop Rational and Personalized Use of Benzodiazepines in Sleep Disorders",
+    "date": "2026-07-31",
+    "timeStart": "08:00",
+    "timeEnd": "12:00",
+    "location": "Aryaduta Hotel Menteng",
+    "pic": "dr.Titah Rahayu",
+    "unit": "Diklat",
+    "attendees": "dr.Titah Rahayu,Sp.K.J",
+    "category": "Diklat",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-orange)",
+    "catColor": "var(--color-cat-orange)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Sudah Selesai",
+      "notaDinas": "Belum Dibuat",
+      "status": "Belum Lengkap",
+      "statusColor": "var(--color-status-yellow)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": "WORKSHOP APSAAR.jpeg",
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 75,
+    "title": "Pembekalan Ujian Dinas dan Ujian Penyesuaian Kenaikan Pangkat",
+    "date": "2026-08-03",
+    "timeStart": "09:00",
+    "timeEnd": "12:00",
+    "location": "Gd. Diklat Kitri Bhakti",
+    "pic": "Dita Pamungkas",
+    "unit": "Diklat",
+    "attendees": "Dita Pamungkas, A.Md.KL, Aprilia Wulansari, A.Md.Kep",
+    "category": "Diklat",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-orange)",
+    "catColor": "var(--color-cat-orange)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 76,
+    "title": "Pendampingan Pembuatan Makalah Ujian Penyesuaian Kenaikan Pangkat",
+    "date": "2026-08-03",
+    "timeStart": "09:00",
+    "timeEnd": "12:00",
+    "location": "Gd. Diklat Kitri Bhakti",
+    "pic": "Dita Pamungkas",
+    "unit": "Diklat",
+    "attendees": "Dita Pamungkas, A.Md.KL, Aprilia Wulansari, A.Md.Kep",
+    "category": "Diklat",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-orange)",
+    "catColor": "var(--color-cat-orange)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 77,
+    "title": "Pembekalan Penilaian Kompetensi",
+    "date": "2026-08-04",
+    "timeStart": "08:30",
+    "timeEnd": "12:00",
+    "location": "Daring",
+    "pic": "drg.CHAIRUMI ALFISYAHR",
+    "unit": "Pelayanan",
+    "attendees": "drg.CHAIRUMI ALFISYAHR, MARS",
+    "category": "Pelayanan",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-yellow)",
+    "catColor": "var(--color-cat-yellow)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 78,
+    "title": "Tryout dan Simulasi Ujian Dinas dan Ujian Kenaikan Pangkat dengan metode CAT",
+    "date": "2026-08-12",
+    "timeStart": "09:00",
+    "timeEnd": "12:00",
+    "location": "Gd. Diklat Kitri Bhakti",
+    "pic": "Dita Pamungkas",
+    "unit": "Diklat",
+    "attendees": "Dita Pamungkas, A.Md.KL, Aprilia Wulansari, A.Md.Kep",
+    "category": "Diklat",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-orange)",
+    "catColor": "var(--color-cat-orange)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 79,
+    "title": "Ujian Penyesuaian Kenaikan Pangkat",
+    "date": "2026-08-13",
+    "timeStart": "07:00",
+    "timeEnd": "12:00",
+    "location": "Gd. Diklat Kitri Bhakti",
+    "pic": "Dita Pamungkas",
+    "unit": "Diklat",
+    "attendees": "Dita Pamungkas, A.Md.KL, Aprilia Wulansari, A.Md.Kep",
+    "category": "Diklat",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-orange)",
+    "catColor": "var(--color-cat-orange)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 80,
+    "title": "Penilaian Kompetensi",
+    "date": "2026-08-19",
+    "timeStart": "07:30",
+    "timeEnd": "12:00",
+    "location": "Gd. Diklat Kitri Bhakti",
+    "pic": "drg.CHAIRUMI ALFISYAHR",
+    "unit": "Pelayanan",
+    "attendees": "drg.CHAIRUMI ALFISYAHR, MARS",
+    "category": "Pelayanan",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-yellow)",
+    "catColor": "var(--color-cat-yellow)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  },
+  {
+    "id": 81,
+    "title": "Penilaian Kompetensi",
+    "date": "2026-08-20",
+    "timeStart": "07:30",
+    "timeEnd": "12:00",
+    "location": "Gd. Diklat Kitri Bhakti",
+    "pic": "drg.CHAIRUMI ALFISYAHR",
+    "unit": "Pelayanan",
+    "attendees": "drg.CHAIRUMI ALFISYAHR, MARS",
+    "category": "Pelayanan",
+    "status": "Akan Dimulai",
+    "color": "var(--color-status-yellow)",
+    "catColor": "var(--color-cat-yellow)",
+    "admin": {
+      "suratTugas": "Belum Dibuat",
+      "undangan": "Belum Dibuat",
+      "notaDinas": "Belum Dibuat",
+      "status": "Kosong",
+      "statusColor": "var(--color-status-red)"
+    },
+    "adminFiles": {
+      "suratTugas": null,
+      "undangan": null,
+      "notaDinas": null
+    }
+  }
+]

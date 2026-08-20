@@ -1,0 +1,2132 @@
+[
+  {
+    "id": 1,
+    "nama": "dr. Muhammad Faridzi Fikri,MKM",
+    "profesi": "MANAJEMEN",
+    "jabatan": "Direktur RSUD Tigaraksa (Eselon III.a)"
+  },
+  {
+    "id": 2,
+    "nama": "HENDRO SUBROTO,SKP,MARS",
+    "profesi": "MANAJEMEN",
+    "jabatan": "Kepala Bagian Administrasi Umum dan Keuangan (Eselon III.b)"
+  },
+  {
+    "id": 3,
+    "nama": "H.RASIDI,SKM,MM.Kes",
+    "profesi": "MANAJEMEN",
+    "jabatan": "Kepala Bidang Pelayanan Penunjang (Eselon III.b)"
+  },
+  {
+    "id": 4,
+    "nama": "MURNALISA DANI,SAP,M.Si",
+    "profesi": "MANAJEMEN",
+    "jabatan": "Kepala Subbagian Umum dan Kepegawaian Pada Bagian Adminitrasi Umum dan Keuangan (Eselon IV.a)"
+  },
+  {
+    "id": 5,
+    "nama": "HENNY, S.Kep.,Ns.,M.M.",
+    "profesi": "MANAJEMEN",
+    "jabatan": "Kepala Subbagian Perencanaan dan Keuangan Pada Bagian Administrasi Umum dan Keuangan (Eselon IV.a)"
+  },
+  {
+    "id": 6,
+    "nama": "DYAH JULIASTUTI,S.Farm,Apt",
+    "profesi": "MANAJEMEN",
+    "jabatan": "Kepala Seksi Pelayanan Penunjang Pada Bidang Pelayanan Penunjang (Eselon IV.a)"
+  },
+  {
+    "id": 7,
+    "nama": "drg.CHAIRUMI ALFISYAHR, MARS",
+    "profesi": "MANAJEMEN",
+    "jabatan": "Kepala Seksi Mutu dan Standar Pelayanan Medik dan Keperawatan Pada Bidang Pelayanan Medik"
+  },
+  {
+    "id": 8,
+    "nama": "dr.ELNI HANDAYANI,M.I.P",
+    "profesi": "MANAJEMEN",
+    "jabatan": "Kepala Bidang Pelayanan Medik (Eselon III.b)"
+  },
+  {
+    "id": 9,
+    "nama": "Dr. dr. RADEN ADJENG DEWI MARIA YULIANI,M.Kes",
+    "profesi": "MANAJEMEN",
+    "jabatan": "Kepala Seksi Pelayanan Medik Pada Bidang Pelayanan Medik (Eselon IV.a)"
+  },
+  {
+    "id": 10,
+    "nama": "ADE YUDI FIRMANSYAH,S.Kep,MH",
+    "profesi": "MANAJEMEN",
+    "jabatan": "Kepala Seksi Pelayanan Penunjang Nonmedik Pada Bidang Pelayanan Penunjang (Eselon IV.a)"
+  },
+  {
+    "id": 11,
+    "nama": "IRA SULISTYANINGSIH,S.Kep,M.I.P",
+    "profesi": "MANAJEMEN",
+    "jabatan": "Kepala Seksi Pelayanan Keperawatan Pada Bidang Pelayanan Medik (Eselon IV.a)"
+  },
+  {
+    "id": 12,
+    "nama": "H.Sudin Wahyudin,SKM,M.I.P",
+    "profesi": "MANAJEMEN",
+    "jabatan": "Kepala Subbagian Sarana dan Prasarana Pada Bagian Administrasi Umum dan Keuangan (Eselon IV.a)"
+  },
+  {
+    "id": 13,
+    "nama": "dr.Djaya Purnama, Sp.An",
+    "profesi": "DOKTER SPESIALIS",
+    "jabatan": "Dokter Spesialis Anastesi"
+  },
+  {
+    "id": 14,
+    "nama": "dr.Simon Natanel Yohanes, Sp.U, M.H.",
+    "profesi": "DOKTER SPESIALIS",
+    "jabatan": "Dokter Spesialis Urologi"
+  },
+  {
+    "id": 15,
+    "nama": "dr. Pradipto Utomo, Sp.P.D.",
+    "profesi": "DOKTER SPESIALIS",
+    "jabatan": "Dokter Spesialis Penyakit Dalam"
+  },
+  {
+    "id": 16,
+    "nama": "dr. Bayu Antara Hadi, Sp.O.T.",
+    "profesi": "DOKTER SPESIALIS",
+    "jabatan": "Dokter Spesialis Orthopedi"
+  },
+  {
+    "id": 17,
+    "nama": "dr.Titah Rahayu,Sp.K.J",
+    "profesi": "DOKTER SPESIALIS",
+    "jabatan": "Dokter Spesialis Kesehatan Jiwa"
+  },
+  {
+    "id": 18,
+    "nama": "dr. Ervianti Abas,Sp.PK",
+    "profesi": "DOKTER SPESIALIS",
+    "jabatan": "Dokter Patologi Klinik"
+  },
+  {
+    "id": 19,
+    "nama": "dr.Fahad Hasan,Sp.B",
+    "profesi": "DOKTER SPESIALIS",
+    "jabatan": "Dokter Spesialis Bedah"
+  },
+  {
+    "id": 20,
+    "nama": "dr. Radot Sihombing, Sp. A",
+    "profesi": "DOKTER SPESIALIS",
+    "jabatan": "Dokter Spesialis Anak"
+  },
+  {
+    "id": 21,
+    "nama": "dr. Karina maharani pramudya,Sp.A",
+    "profesi": "DOKTER SPESIALIS",
+    "jabatan": "Dokter Spesialis Anak"
+  },
+  {
+    "id": 22,
+    "nama": "dr. Pasarella Sitanggang,M.Kes.,Sp.B",
+    "profesi": "DOKTER SPESIALIS",
+    "jabatan": "Dokter Spesialis Bedah"
+  },
+  {
+    "id": 23,
+    "nama": "dr. Intan Masita Hayati,Sp.Rad",
+    "profesi": "DOKTER SPESIALIS",
+    "jabatan": "Dokter Spesialis Radiologi"
+  },
+  {
+    "id": 24,
+    "nama": "dr. Savitri Rahayu,Sp.OG",
+    "profesi": "DOKTER SPESIALIS",
+    "jabatan": "Dokter Ahli Muda Obgyn"
+  },
+  {
+    "id": 25,
+    "nama": "dr. Edi Charlen, M.Ked.Klin., Sp.An-TI",
+    "profesi": "DOKTER SPESIALIS",
+    "jabatan": "Dokter Ahli Pertama Dokter Spesialis Anestesi dan Terapi Intensif"
+  },
+  {
+    "id": 26,
+    "nama": "dr. Arini Nurlela, Sp.PD",
+    "profesi": "DOKTER SPESIALIS",
+    "jabatan": "Dokter Spesialis Penyakit Dalam Ahli Pertama"
+  },
+  {
+    "id": 27,
+    "nama": "dr. Meycha Dafhonsa, Sp.OG",
+    "profesi": "DOKTER SPESIALIS",
+    "jabatan": "dokter ahli pertama dokter spesialis obstetri dan ginekologi"
+  },
+  {
+    "id": 28,
+    "nama": "dr. Heru Prasetyo, Sp.OG",
+    "profesi": "DOKTER SPESIALIS",
+    "jabatan": "dokter ahli pertama dokter spesialis obstetri dan ginekologi"
+  },
+  {
+    "id": 29,
+    "nama": "dr. Fyrnaz Kautharifa,Sp.N",
+    "profesi": "DOKTER SPESIALIS",
+    "jabatan": "Dokter Spesialis Neurologi"
+  },
+  {
+    "id": 30,
+    "nama": "dr.Achmad Ismail Sampurna Putra, BMedSci, SpJP, FIHA",
+    "profesi": "DOKTER SPESIALIS",
+    "jabatan": "Dokter Spesialis Jantung"
+  },
+  {
+    "id": 31,
+    "nama": "dr. Ricky,Sp.M",
+    "profesi": "DOKTER SPESIALIS",
+    "jabatan": "Dokter Spesialis Mata"
+  },
+  {
+    "id": 32,
+    "nama": "dr. Warkah Sanjaya,Sp.K.F.R",
+    "profesi": "DOKTER SPESIALIS",
+    "jabatan": "Dokter Spesialis Rehab Medik"
+  },
+  {
+    "id": 33,
+    "nama": "drg. Derfiana Dwinanda Hussein,Sp.KG",
+    "profesi": "DOKTER SPESIALIS",
+    "jabatan": "Dokter Gigi Spesialis Endodonsi"
+  },
+  {
+    "id": 34,
+    "nama": "dr. Muhamad Iman Nugraha, Sp.P",
+    "profesi": "DOKTER SPESIALIS",
+    "jabatan": "Dokter Spesialis Paru"
+  },
+  {
+    "id": 35,
+    "nama": "dr andhika Pangestu, Sp,PD",
+    "profesi": "DOKTER SPESIALIS",
+    "jabatan": "Dokter Spesialis Penyakit Dalam"
+  },
+  {
+    "id": 36,
+    "nama": "dr. Risna",
+    "profesi": "DOKTER UMUM",
+    "jabatan": "dokter ahli madya"
+  },
+  {
+    "id": 37,
+    "nama": "dr.Putri Meidiana Ayu",
+    "profesi": "DOKTER UMUM",
+    "jabatan": "dokter ahli pertama"
+  },
+  {
+    "id": 38,
+    "nama": "dr. Rossy Iftah Nurdiyana",
+    "profesi": "DOKTER UMUM",
+    "jabatan": "dokter ahli pertama"
+  },
+  {
+    "id": 39,
+    "nama": "dr. Mistuti Alwiyah",
+    "profesi": "DOKTER UMUM",
+    "jabatan": "Dokter ahli madya"
+  },
+  {
+    "id": 40,
+    "nama": "dr. Sami Rahmawati",
+    "profesi": "DOKTER UMUM",
+    "jabatan": "dokter ahli pertama"
+  },
+  {
+    "id": 41,
+    "nama": "dr.Olga Adhitya",
+    "profesi": "DOKTER UMUM",
+    "jabatan": "dokter ahli pertama"
+  },
+  {
+    "id": 42,
+    "nama": "dr.Sekarayu Putri Kencana",
+    "profesi": "DOKTER UMUM",
+    "jabatan": "dokter ahli pertama"
+  },
+  {
+    "id": 43,
+    "nama": "dr.Dewi Ajeng Rahmawati",
+    "profesi": "DOKTER UMUM",
+    "jabatan": "dokter ahli pertama"
+  },
+  {
+    "id": 44,
+    "nama": "dr. Rindayu Ambarsih",
+    "profesi": "DOKTER UMUM",
+    "jabatan": "dokter ahli pertama"
+  },
+  {
+    "id": 45,
+    "nama": "dr. Rora Asyulia,M.K.M",
+    "profesi": "DOKTER UMUM",
+    "jabatan": "Dokter ahli madya"
+  },
+  {
+    "id": 46,
+    "nama": "dr. Elizabeth Syailendrastuti Susanti",
+    "profesi": "DOKTER UMUM",
+    "jabatan": "dokter ahli pertama"
+  },
+  {
+    "id": 47,
+    "nama": "dr. Muhammad Nurhazim Nugroho",
+    "profesi": "DOKTER UMUM",
+    "jabatan": "dokter ahli pertama"
+  },
+  {
+    "id": 48,
+    "nama": "dr. Edmundo Caesario Dwiputra",
+    "profesi": "DOKTER UMUM",
+    "jabatan": "dokter ahli pertama"
+  },
+  {
+    "id": 49,
+    "nama": "dr. Lorenza Clara Berina",
+    "profesi": "DOKTER UMUM",
+    "jabatan": "dokter ahli pertama"
+  },
+  {
+    "id": 50,
+    "nama": "dr. Ramandita Duta Dewangga",
+    "profesi": "DOKTER UMUM",
+    "jabatan": "dokter ahli pertama"
+  },
+  {
+    "id": 51,
+    "nama": "dr. Jennifer Jane",
+    "profesi": "DOKTER UMUM",
+    "jabatan": "dokter ahli pertama"
+  },
+  {
+    "id": 52,
+    "nama": "dr. Fikri Walimaulana Bhakti",
+    "profesi": "DOKTER UMUM",
+    "jabatan": "dokter ahli pertama"
+  },
+  {
+    "id": 53,
+    "nama": "dr. Nurohtun Hasanah",
+    "profesi": "DOKTER UMUM",
+    "jabatan": "dokter ahli pertama"
+  },
+  {
+    "id": 54,
+    "nama": "dr.JAYADI",
+    "profesi": "DOKTER UMUM",
+    "jabatan": "dokter ahli pertama"
+  },
+  {
+    "id": 55,
+    "nama": "dr. Ryan Juliansyah",
+    "profesi": "DOKTER UMUM",
+    "jabatan": "-"
+  },
+  {
+    "id": 56,
+    "nama": "dr. Rafly Abdurasyd",
+    "profesi": "DOKTER UMUM",
+    "jabatan": "-"
+  },
+  {
+    "id": 57,
+    "nama": "dr. Eragradytia Hardianto",
+    "profesi": "DOKTER UMUM",
+    "jabatan": "-"
+  },
+  {
+    "id": 58,
+    "nama": "dr. Nova Handayani",
+    "profesi": "DOKTER UMUM",
+    "jabatan": "Dokter Ahli Pertama - Dokter (Umum)"
+  },
+  {
+    "id": 59,
+    "nama": "dr. Wiwik Sulistiyowati",
+    "profesi": "DOKTER UMUM",
+    "jabatan": "Dokter Ahli Pertama - Dokter Umum"
+  },
+  {
+    "id": 60,
+    "nama": "dr. Akhmad Rifai",
+    "profesi": "DOKTER UMUM",
+    "jabatan": "Dokter Ahli Muda"
+  },
+  {
+    "id": 61,
+    "nama": "drg.Novi Agustianti Anggriawan, SI",
+    "profesi": "DOKTER GIGI",
+    "jabatan": "Dokter Gigi Ahli Muda"
+  },
+  {
+    "id": 62,
+    "nama": "drg .Susi Erlinawati",
+    "profesi": "DOKTER GIGI",
+    "jabatan": "Dokter Gigi Ahli Madya"
+  },
+  {
+    "id": 63,
+    "nama": "drg. Aini Ramadhani",
+    "profesi": "DOKTER GIGI",
+    "jabatan": "Dokter Gigi Ahli Pertama"
+  },
+  {
+    "id": 64,
+    "nama": "drg.Putri Binangsri Barus",
+    "profesi": "DOKTER GIGI",
+    "jabatan": "Dokter Gigi Ahli Pertama"
+  },
+  {
+    "id": 65,
+    "nama": "drg. Apriana Nofita Sari",
+    "profesi": "DOKTER GIGI",
+    "jabatan": "Dokter Gigi Ahli Pertama"
+  },
+  {
+    "id": 66,
+    "nama": "Yeni Surya Rahman,A.Md.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat terampil"
+  },
+  {
+    "id": 67,
+    "nama": "Ners. Tuti Wahyuningsih, S.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat Madya"
+  },
+  {
+    "id": 68,
+    "nama": "Ns. Sri Umbarawati, S.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat Madya"
+  },
+  {
+    "id": 69,
+    "nama": "Rusbandi, S.ST.M.Si",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat Ahli Muda"
+  },
+  {
+    "id": 70,
+    "nama": "Hadijah, S.Kep. Ns.",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat Mahir"
+  },
+  {
+    "id": 71,
+    "nama": "Syarief Oemar Lubis, S.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat Pelaksana Lanjutan"
+  },
+  {
+    "id": 72,
+    "nama": "M. Bararoh, A.Md.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "Terampil- Perawat"
+  },
+  {
+    "id": 73,
+    "nama": "Ns. Ledi Diana Lumban Gaol S.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat Ahli Pertama"
+  },
+  {
+    "id": 74,
+    "nama": "Bayu Muhammad,Amd.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "Terampil Perawat"
+  },
+  {
+    "id": 75,
+    "nama": "Ns. Tri Wahyu Bungsuwati,S.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat Penyelia"
+  },
+  {
+    "id": 76,
+    "nama": "Endang Sri Rahayu, S.Kep.Ners",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat Ahli Madya"
+  },
+  {
+    "id": 77,
+    "nama": "Handayani, Amk",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat Penyelia"
+  },
+  {
+    "id": 78,
+    "nama": "Asti Juandani, A.Md.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat Penyelia"
+  },
+  {
+    "id": 79,
+    "nama": "Aprilia Wulansari, A.Md.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat Terampil"
+  },
+  {
+    "id": 80,
+    "nama": "Linda Amiyati Hasan.S.Kep.Ners",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat Penyelia"
+  },
+  {
+    "id": 81,
+    "nama": "Ns.Linda Silitonga,S.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat Ahli Muda"
+  },
+  {
+    "id": 82,
+    "nama": "Muhammad Ridwan Suryadinata",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat Penyelia"
+  },
+  {
+    "id": 83,
+    "nama": "Siti Halawiah,A,Md.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat Terampil"
+  },
+  {
+    "id": 84,
+    "nama": "Reni Puspita Purnama Sari,A.Md.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat Terampil"
+  },
+  {
+    "id": 85,
+    "nama": "Arfahni,A.Md.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat Terampil"
+  },
+  {
+    "id": 86,
+    "nama": "Lina Marliana,A.MK",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat Terampil"
+  },
+  {
+    "id": 87,
+    "nama": "Ratih Kusuma Astuti,A.Md",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat Terampil"
+  },
+  {
+    "id": 88,
+    "nama": "Abdullah Kaspul Anwar, A.Md.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat Terampil"
+  },
+  {
+    "id": 89,
+    "nama": "Ns. Rizki Suryatama, S.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat Ahli Pertama"
+  },
+  {
+    "id": 90,
+    "nama": "Ainul Yaqin, S.Kep.,Ners",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat Ahli Pertama"
+  },
+  {
+    "id": 91,
+    "nama": "Ns. Fery Pebriansyah, S.Kep.",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat Ahli Pertama"
+  },
+  {
+    "id": 92,
+    "nama": "Anang Ihda Pratama, S.Kep., Ners",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat Ahli Pertama"
+  },
+  {
+    "id": 93,
+    "nama": "Nadim, A.Md.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat Terampil"
+  },
+  {
+    "id": 94,
+    "nama": "Emi Haryati, Amd.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat Terampil"
+  },
+  {
+    "id": 95,
+    "nama": "Ns. IHSANAT REFI SUHARTI, S.Tr.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "PERAWAT AHLI PERTAMA"
+  },
+  {
+    "id": 96,
+    "nama": "Tiara Lita, S.Kep.,Ners.",
+    "profesi": "PERAWAT",
+    "jabatan": "PERAWAT AHLI PERTAMA"
+  },
+  {
+    "id": 97,
+    "nama": "Ns. Zahrotun Nisa, S.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "PERAWAT AHLI PERTAMA"
+  },
+  {
+    "id": 98,
+    "nama": "Ns. Anas Alala, S.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "PERAWAT AHLI PERTAMA"
+  },
+  {
+    "id": 99,
+    "nama": "Ns. Haris Rafiuddin Putra, S.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "PERAWAT AHLI PERTAMA"
+  },
+  {
+    "id": 100,
+    "nama": "Ns. Wilda Atusnah, S.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "PERAWAT AHLI PERTAMA"
+  },
+  {
+    "id": 101,
+    "nama": "Ns. Ady Setyo Prastowo, S.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "PERAWAT AHLI PERTAMA"
+  },
+  {
+    "id": 102,
+    "nama": "Ns.Agnes Mustika Asmarani, S.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "PERAWAT AHLI PERTAMA"
+  },
+  {
+    "id": 103,
+    "nama": "Ns. Fresilia Ayu Angganis., S. Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "PERAWAT AHLI PERTAMA"
+  },
+  {
+    "id": 104,
+    "nama": "Fairnienta Raniwesti, S.Kep, Ners",
+    "profesi": "PERAWAT",
+    "jabatan": "PERAWAT AHLI PERTAMA"
+  },
+  {
+    "id": 105,
+    "nama": "Ns. Bethania Cindi Mei Ria Simanjuntak, S.Tr. Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "PERAWAT AHLI PERTAMA"
+  },
+  {
+    "id": 106,
+    "nama": "Ns. Mutiara Khaerotul Hidayah S.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "PERAWAT AHLI PERTAMA"
+  },
+  {
+    "id": 107,
+    "nama": "Ns. Permata Rina Nababan, S.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "PERAWAT AHLI PERTAMA"
+  },
+  {
+    "id": 108,
+    "nama": "Ns. EKA WIRANANDA TALKA, S.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "PERAWAT AHLI PERTAMA"
+  },
+  {
+    "id": 109,
+    "nama": "Liza Hariyani Kosasih, S.Tr.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "PERAWAT AHLI PERTAMA"
+  },
+  {
+    "id": 110,
+    "nama": "Putri anggraeni, A.Md.kep.",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat terampil"
+  },
+  {
+    "id": 111,
+    "nama": "DIAN DEVIKA PITRI SITUMORANG, A.Md.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat terampil"
+  },
+  {
+    "id": 112,
+    "nama": "Cornelia Tamara Agatha,A.Md.Kep.",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat terampil"
+  },
+  {
+    "id": 113,
+    "nama": "Angga Cahya Affandi, A.Md.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat terampil"
+  },
+  {
+    "id": 114,
+    "nama": "Chika Islamiati, A.Md.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat terampil"
+  },
+  {
+    "id": 115,
+    "nama": "Putri Nada Hayatul Isma,A.Md.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat terampil"
+  },
+  {
+    "id": 116,
+    "nama": "AGUS SETIAWAN,A.Md.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat terampil"
+  },
+  {
+    "id": 117,
+    "nama": "FREDI PRATAMA ,A.Md.kep",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat terampil"
+  },
+  {
+    "id": 118,
+    "nama": "Cindi Tiana Harahap, A.Md.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat terampil"
+  },
+  {
+    "id": 119,
+    "nama": "ULFA URRASYIDHAH,A.Md.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat terampil"
+  },
+  {
+    "id": 120,
+    "nama": "Raja Boan Tua Sitorbandolok. S, A.Md.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat terampil"
+  },
+  {
+    "id": 121,
+    "nama": "EKA FITRIASTUTI, A.Md.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat terampil"
+  },
+  {
+    "id": 122,
+    "nama": "ALMA ANNISA, A.Md.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat terampil"
+  },
+  {
+    "id": 123,
+    "nama": "WINDI LAURA PUTRI, A.Md, Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat terampil"
+  },
+  {
+    "id": 124,
+    "nama": "FITRI ANNISA, A.Md.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat terampil"
+  },
+  {
+    "id": 125,
+    "nama": "FAISHAL AFIF,Amd, Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat Terampil"
+  },
+  {
+    "id": 126,
+    "nama": "ANGGA HARYADI,Amd, Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat terampil"
+  },
+  {
+    "id": 127,
+    "nama": "Asep Irfan Nazil Ramdani, A.Md.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat terampil"
+  },
+  {
+    "id": 128,
+    "nama": "Indah Yuli karina A.Md.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat terampil"
+  },
+  {
+    "id": 129,
+    "nama": "Siti Mashfupah, A.Md.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat Terampil"
+  },
+  {
+    "id": 130,
+    "nama": "Neni Oktaviani, A.Md.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat Terampil"
+  },
+  {
+    "id": 131,
+    "nama": "Muhamad Beril Firdaus, A.Md.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat Terampil"
+  },
+  {
+    "id": 132,
+    "nama": "Ebah, A.Md.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat Terampil"
+  },
+  {
+    "id": 133,
+    "nama": "Muhamad Ali, A.Md.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat Terampil"
+  },
+  {
+    "id": 134,
+    "nama": "Maryamah, AMK",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat Terampil"
+  },
+  {
+    "id": 135,
+    "nama": "Erna Maria Rutmawaty Tampubolon, AM.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat Terampil"
+  },
+  {
+    "id": 136,
+    "nama": "Tuti Isdawati, AMK",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat Terampil"
+  },
+  {
+    "id": 137,
+    "nama": "Sulasiyah, Amd.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat Terampil"
+  },
+  {
+    "id": 138,
+    "nama": "Arif Munandar, AMK",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat Terampil"
+  },
+  {
+    "id": 139,
+    "nama": "Eko Narimo, Amk",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat Terampil"
+  },
+  {
+    "id": 140,
+    "nama": "Saadudin, A.Md.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat Terampil"
+  },
+  {
+    "id": 141,
+    "nama": "Dewi Komala, AMK",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat Terampil"
+  },
+  {
+    "id": 142,
+    "nama": "Agus Sudaryana, A.Md.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat Terampil"
+  },
+  {
+    "id": 143,
+    "nama": "Riska Ramadhana, Amd.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat Terampil"
+  },
+  {
+    "id": 144,
+    "nama": "Moh. Irfan, AMK",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat Terampil"
+  },
+  {
+    "id": 145,
+    "nama": "Muhamad Nur, Amd.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat Terampil"
+  },
+  {
+    "id": 146,
+    "nama": "Gin Gin Purna Ginanjar, A.Md.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat Terampil"
+  },
+  {
+    "id": 147,
+    "nama": "Sahroni, A.Md.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat Terampil"
+  },
+  {
+    "id": 148,
+    "nama": "Asgari, AMK",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat Terampil"
+  },
+  {
+    "id": 149,
+    "nama": "Epha Kristine Natalia Pasaribu, A.Md.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat Terampil"
+  },
+  {
+    "id": 150,
+    "nama": "Thysar Mahysar Purbayu, A.Md.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat Terampil"
+  },
+  {
+    "id": 151,
+    "nama": "Mimin Harnika, AMK",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat Terampil"
+  },
+  {
+    "id": 152,
+    "nama": "Sari Lidiawati, Amd.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat Terampil"
+  },
+  {
+    "id": 153,
+    "nama": "Faizal Izmi, A.Md.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat Terampil"
+  },
+  {
+    "id": 154,
+    "nama": "Ahmad Rapiudin, A.Md. Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat Terampil"
+  },
+  {
+    "id": 155,
+    "nama": "Galih Amarten, A.Md.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat Terampil"
+  },
+  {
+    "id": 156,
+    "nama": "Ida Royani, AMK",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat Terampil"
+  },
+  {
+    "id": 157,
+    "nama": "Afif Irfandi, A.Md.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat Terampil"
+  },
+  {
+    "id": 158,
+    "nama": "Marjuki Sastra Wijaya, A.Md.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat Terampil"
+  },
+  {
+    "id": 159,
+    "nama": "Antoni Siswandi, A.Md.Kep",
+    "profesi": "PERAWAT",
+    "jabatan": "Perawat Terampil"
+  },
+  {
+    "id": 160,
+    "nama": "Desti Elen Safitri, A.Md.Kes.",
+    "profesi": "PERAWAT GIGI",
+    "jabatan": "Terapis Gigi dan Mulut Terampil"
+  },
+  {
+    "id": 161,
+    "nama": "Rahmi Sugiharti, A.Md.Kes",
+    "profesi": "PERAWAT GIGI",
+    "jabatan": "Terapis Gigi dan Mulut Terampil"
+  },
+  {
+    "id": 162,
+    "nama": "Fitria Endah Utami, SST, MARS",
+    "profesi": "BIDAN",
+    "jabatan": "Bidan Ahli Pertama"
+  },
+  {
+    "id": 163,
+    "nama": "Susilawati, STR.Keb",
+    "profesi": "BIDAN",
+    "jabatan": "Bidan Penyelia"
+  },
+  {
+    "id": 164,
+    "nama": "Zoraida Kartini Putri, AM.Keb",
+    "profesi": "BIDAN",
+    "jabatan": "Bidan Terampil"
+  },
+  {
+    "id": 165,
+    "nama": "Rini Sumarni,SST",
+    "profesi": "BIDAN",
+    "jabatan": "Bidan Ahli Madya"
+  },
+  {
+    "id": 166,
+    "nama": "Nurwiyah, S.Tr.Keb",
+    "profesi": "BIDAN",
+    "jabatan": "Bidan Pelaksana Lanjutan"
+  },
+  {
+    "id": 167,
+    "nama": "Menda Sebayang, SST",
+    "profesi": "BIDAN",
+    "jabatan": "Bidan Ahli Madya"
+  },
+  {
+    "id": 168,
+    "nama": "Juliati, A.Md.Keb",
+    "profesi": "BIDAN",
+    "jabatan": "Bidan Terampil"
+  },
+  {
+    "id": 169,
+    "nama": "Edith Friarjanti,A.Md.Keb",
+    "profesi": "BIDAN",
+    "jabatan": "Bidan Terampil"
+  },
+  {
+    "id": 170,
+    "nama": "Bd. Adys Werestandina, S.Keb.",
+    "profesi": "BIDAN",
+    "jabatan": "Bidan Ahli Pertama"
+  },
+  {
+    "id": 171,
+    "nama": "Iin Purwanti, Am.Keb",
+    "profesi": "BIDAN",
+    "jabatan": "Bidan Terampil"
+  },
+  {
+    "id": 172,
+    "nama": "Susan Nilawati, SST",
+    "profesi": "BIDAN",
+    "jabatan": "Bidan Ahli Madya"
+  },
+  {
+    "id": 173,
+    "nama": "Andriyani Setianingsih, SST",
+    "profesi": "BIDAN",
+    "jabatan": "Bidan Ahli Pertama"
+  },
+  {
+    "id": 174,
+    "nama": "Yayat Suryati, S.Tr.Keb",
+    "profesi": "BIDAN",
+    "jabatan": "Bidan Penyelia"
+  },
+  {
+    "id": 175,
+    "nama": "Agnes Sapta Desiyanti,S.Tr.Keb,Bdn",
+    "profesi": "BIDAN",
+    "jabatan": "Bidan Terampil"
+  },
+  {
+    "id": 176,
+    "nama": "Rismarita Banjarnahor, SST",
+    "profesi": "BIDAN",
+    "jabatan": "Bidan Ahli Madya"
+  },
+  {
+    "id": 177,
+    "nama": "Rika Novianti, A.Md.Keb",
+    "profesi": "BIDAN",
+    "jabatan": "Bidan Terampil"
+  },
+  {
+    "id": 178,
+    "nama": "Maya Erisna., S.Tr.Keb.",
+    "profesi": "BIDAN",
+    "jabatan": "Bidan Ahli Pertama"
+  },
+  {
+    "id": 179,
+    "nama": "Irna Noer Aulia, S.Tr.Keb.",
+    "profesi": "BIDAN",
+    "jabatan": "Bidan Ahli Pertama"
+  },
+  {
+    "id": 180,
+    "nama": "Teni Arianca Ligina, S.Tr.Keb",
+    "profesi": "BIDAN",
+    "jabatan": "Bidan Ahli Pertama"
+  },
+  {
+    "id": 181,
+    "nama": "Desi Kurniasari S.Tr.Keb",
+    "profesi": "BIDAN",
+    "jabatan": "Bidan Ahli Pertama"
+  },
+  {
+    "id": 182,
+    "nama": "Rosse Adelia Luthfiyyah, S.Tr.Keb, Bdn",
+    "profesi": "BIDAN",
+    "jabatan": "Bidan Ahli Pertama"
+  },
+  {
+    "id": 183,
+    "nama": "Arnilis Sugiarti,Amd.Keb",
+    "profesi": "BIDAN",
+    "jabatan": "Bidan Pelaksana"
+  },
+  {
+    "id": 184,
+    "nama": "TIARA SHIFA AZZAHRA, A.Md.Keb",
+    "profesi": "BIDAN",
+    "jabatan": "Bidan Terampil"
+  },
+  {
+    "id": 185,
+    "nama": "Ruti Catur Jayanti, Amd. Keb.",
+    "profesi": "BIDAN",
+    "jabatan": "Bidan Terampil"
+  },
+  {
+    "id": 186,
+    "nama": "Bdn.LATIFAH, S.Keb",
+    "profesi": "BIDAN",
+    "jabatan": "BIDAN AHLI PERTAMA"
+  },
+  {
+    "id": 187,
+    "nama": "Suci Mustika, SST",
+    "profesi": "BIDAN",
+    "jabatan": "BIDAN AHLI PERTAMA"
+  },
+  {
+    "id": 188,
+    "nama": "ERLINA WIDIYANINGRUM,S.Keb, Bdn",
+    "profesi": "BIDAN",
+    "jabatan": "BIDAN AHLI PERTAMA"
+  },
+  {
+    "id": 189,
+    "nama": "Menik Suprapti,A.Md.Keb",
+    "profesi": "BIDAN",
+    "jabatan": "Bidan Terampil"
+  },
+  {
+    "id": 190,
+    "nama": "Yulyanti, AM.Keb",
+    "profesi": "BIDAN",
+    "jabatan": "Bidan Terampil"
+  },
+  {
+    "id": 191,
+    "nama": "DAMERIA FARHANI, Am.Keb",
+    "profesi": "BIDAN",
+    "jabatan": "Bidan Terampil"
+  },
+  {
+    "id": 192,
+    "nama": "Hera Meidawati,Amd.Keb",
+    "profesi": "BIDAN",
+    "jabatan": "Bidan Terampil"
+  },
+  {
+    "id": 193,
+    "nama": "Dini Yuliani, A.md.Keb",
+    "profesi": "BIDAN",
+    "jabatan": "Bidan Terampil"
+  },
+  {
+    "id": 194,
+    "nama": "Dwi Cahyani,A.md.Keb",
+    "profesi": "BIDAN",
+    "jabatan": "Bidan Terampil"
+  },
+  {
+    "id": 195,
+    "nama": "Tresalani Utami, A. Md",
+    "profesi": "BIDAN",
+    "jabatan": "Bidan Terampil"
+  },
+  {
+    "id": 196,
+    "nama": "Nurul Fadma Damayanti, A.Md. Keb",
+    "profesi": "BIDAN",
+    "jabatan": "Bidan Terampil"
+  },
+  {
+    "id": 197,
+    "nama": "Sri Parmulatsih, Amd. keb",
+    "profesi": "BIDAN",
+    "jabatan": "Bidan Terampil"
+  },
+  {
+    "id": 198,
+    "nama": "Khoirunnisa, Amd. Keb",
+    "profesi": "BIDAN",
+    "jabatan": "Bidan Terampil"
+  },
+  {
+    "id": 199,
+    "nama": "Eva Suryanih, Apt",
+    "profesi": "PENGAWAS FARMASI",
+    "jabatan": "Pengawas Farmasi dan Makanan Mahir"
+  },
+  {
+    "id": 200,
+    "nama": "Yanita Sapti,A.MF",
+    "profesi": "PENGAWAS FARMASI",
+    "jabatan": "Pengawas Farmasi dan Makanan Mahir"
+  },
+  {
+    "id": 201,
+    "nama": "Saidah Permata Sari,S.Farm.Apt",
+    "profesi": "APOTEKER",
+    "jabatan": "Apoteker Ahli Pertama"
+  },
+  {
+    "id": 202,
+    "nama": "Salma Syarifah Elhaitami,S.Fam.,Apt",
+    "profesi": "APOTEKER",
+    "jabatan": "Apoteker Ahli Pertama"
+  },
+  {
+    "id": 203,
+    "nama": "Ria Cahya Andriana, S.Farm.Apt",
+    "profesi": "APOTEKER",
+    "jabatan": "Apoteker Ahli Pertama"
+  },
+  {
+    "id": 204,
+    "nama": "Puji Lestari Heryadi, Apt., M.Farm.",
+    "profesi": "APOTEKER",
+    "jabatan": "Apoteker Ahli Muda"
+  },
+  {
+    "id": 205,
+    "nama": "Apt. Nurdiana Rahmatika, S.Si",
+    "profesi": "APOTEKER",
+    "jabatan": "Apoteker Pertama"
+  },
+  {
+    "id": 206,
+    "nama": "Apt. Nadya Zahrayny, S.Far",
+    "profesi": "APOTEKER",
+    "jabatan": "Apoteker ahli pertama"
+  },
+  {
+    "id": 207,
+    "nama": "apt. Neng Shella Tresnasari, S.Farm",
+    "profesi": "APOTEKER",
+    "jabatan": "Apoteker ahli pertama"
+  },
+  {
+    "id": 208,
+    "nama": "apt. Dewi Oktaviana, S.Farm",
+    "profesi": "APOTEKER",
+    "jabatan": "Apoteker ahli pertama"
+  },
+  {
+    "id": 209,
+    "nama": "Julia Salsabila,A.Md.Farm",
+    "profesi": "ASISTEN APOTEKER",
+    "jabatan": "Asisten Apoteker Terampil"
+  },
+  {
+    "id": 210,
+    "nama": "GITA FITRIA DEVI, A.Md.Farm",
+    "profesi": "ASISTEN APOTEKER",
+    "jabatan": "Asisten Apoteker Terampil"
+  },
+  {
+    "id": 211,
+    "nama": "NIA ARDINA, A.Md.Farm",
+    "profesi": "ASISTEN APOTEKER",
+    "jabatan": "Asisten Apoteker Terampil"
+  },
+  {
+    "id": 212,
+    "nama": "Nur Aini, A.Md.Farm.",
+    "profesi": "ASISTEN APOTEKER",
+    "jabatan": "Asisten Apoteker Terampil"
+  },
+  {
+    "id": 213,
+    "nama": "Nita Sari Setyowati,A.Md.AK, S.Si",
+    "profesi": "ANALIS",
+    "jabatan": "Pranata Laboratorium Kesehatan Pelaksana Lanjutan Mahir"
+  },
+  {
+    "id": 214,
+    "nama": "AZZYA OCTAVIANI, S.Tr.Kes",
+    "profesi": "ANALIS",
+    "jabatan": "PRANATA LABORATORIUM KESEHATAN AHLI PERTAMA"
+  },
+  {
+    "id": 215,
+    "nama": "Riko Tafani, S.Biotek",
+    "profesi": "ANALIS",
+    "jabatan": "PRANATA LABORATORIUM KESEHATAN AHLI PERTAMA"
+  },
+  {
+    "id": 216,
+    "nama": "Anita Martini,A.Md.Kes",
+    "profesi": "ANALIS",
+    "jabatan": "Terampil-Pranata Laboratorium Kesehatan"
+  },
+  {
+    "id": 217,
+    "nama": "WIDIA JUNIARTI, A.Md.Kes",
+    "profesi": "ANALIS",
+    "jabatan": "PRANATA LABORATORIUM KESEHATAN TERAMPIL"
+  },
+  {
+    "id": 218,
+    "nama": "LUTFIATUL HASANAH, A.Md.",
+    "profesi": "ANALIS",
+    "jabatan": "PRANATA LABORATORIUM KESEHATAN TERAMPIL"
+  },
+  {
+    "id": 219,
+    "nama": "ANISA NUR INSANI, A.Md.AK",
+    "profesi": "ANALIS",
+    "jabatan": "PRANATA LABORATORIUM KESEHATAN TERAMPIL"
+  },
+  {
+    "id": 220,
+    "nama": "DELIA LISTRIANA GALIH HIDAYAT, A.Md.Kes",
+    "profesi": "ANALIS",
+    "jabatan": "PRANATA LABORATORIUM KESEHATAN TERAMPIL"
+  },
+  {
+    "id": 221,
+    "nama": "LUTHFIAH HUSNUL KHOTIMAH, A.Md.Kes.",
+    "profesi": "ANALIS",
+    "jabatan": "PRANATA LABORATORIUM KESEHATAN TERAMPIL"
+  },
+  {
+    "id": 222,
+    "nama": "Wisnu Tri Harnoko, A.Md.A.K",
+    "profesi": "ANALIS",
+    "jabatan": "PRANATA LABORATORIUM KESEHATAN TERAMPIL"
+  },
+  {
+    "id": 223,
+    "nama": "Siti Robiah, Amd.AK",
+    "profesi": "ANALIS",
+    "jabatan": "Pranata Laboratorium Kesehatan Terampil"
+  },
+  {
+    "id": 224,
+    "nama": "Jiman, A.Md.A.K",
+    "profesi": "ANALIS",
+    "jabatan": "Pranata Laboratorium Kesehatan Terampil"
+  },
+  {
+    "id": 225,
+    "nama": "Fiki Ayu Ningsih, A.Md. MIKRM",
+    "profesi": "REKAM MEDIS",
+    "jabatan": "Perekam Medis Terampil"
+  },
+  {
+    "id": 226,
+    "nama": "Nova Astriwati,Amd.RM",
+    "profesi": "REKAM MEDIS",
+    "jabatan": "Perekam Medis Terampil"
+  },
+  {
+    "id": 227,
+    "nama": "Firzah Dika Andria,A.Md",
+    "profesi": "REKAM MEDIS",
+    "jabatan": "Perekam Medis Terampil"
+  },
+  {
+    "id": 228,
+    "nama": "Elisa Riani,A.Md",
+    "profesi": "REKAM MEDIS",
+    "jabatan": "Perekam Medis Teraampil"
+  },
+  {
+    "id": 229,
+    "nama": "Aminah,A.Md",
+    "profesi": "REKAM MEDIS",
+    "jabatan": "Perekam Medis Terampil"
+  },
+  {
+    "id": 230,
+    "nama": "Sri Wining Sulistya Ningrum,A.Md.RMIK",
+    "profesi": "REKAM MEDIS",
+    "jabatan": "Perekam Medis Terampil"
+  },
+  {
+    "id": 231,
+    "nama": "Vira Pirwandini, A.Md.RMIK",
+    "profesi": "REKAM MEDIS",
+    "jabatan": "Perekam Medis Terampil"
+  },
+  {
+    "id": 232,
+    "nama": "M. ALIF ZAYYAN A.Md.RMIK",
+    "profesi": "REKAM MEDIS",
+    "jabatan": "Perekam Medis Terampil"
+  },
+  {
+    "id": 233,
+    "nama": "Erika Dwi Habsari, A.Md.Kes",
+    "profesi": "REKAM MEDIS",
+    "jabatan": "Perekam Medis Terampil"
+  },
+  {
+    "id": 234,
+    "nama": "Ervi Nadasari, A.Md.RMIK",
+    "profesi": "REKAM MEDIS",
+    "jabatan": "Perekam Medis Terampil"
+  },
+  {
+    "id": 235,
+    "nama": "Adella Franciska Sinaga, A.Md.RMIK",
+    "profesi": "REKAM MEDIS",
+    "jabatan": "Perekam Medis Terampil"
+  },
+  {
+    "id": 236,
+    "nama": "SITI NURLAELA,SST",
+    "profesi": "PENGADMINISTRASIAN KANTOR",
+    "jabatan": "Pengadministrasian Perkantoran Seksi Pelayanan Medik Pada Bidang Pelayanan Medik"
+  },
+  {
+    "id": 237,
+    "nama": "Shelva",
+    "profesi": "PENGADMINISTRASIAN KANTOR",
+    "jabatan": "Pengadministrasi Perkantoran"
+  },
+  {
+    "id": 238,
+    "nama": "Abdul Mukti",
+    "profesi": "PENGADMINISTRASIAN KANTOR",
+    "jabatan": "Pengadministrasi Perkantoran"
+  },
+  {
+    "id": 239,
+    "nama": "AAS PATAH HIDAYAT",
+    "profesi": "PENGADMINISTRASIAN KANTOR",
+    "jabatan": "Pengadministrasi Perkantoran"
+  },
+  {
+    "id": 240,
+    "nama": "Rifki Yadi Ramadan",
+    "profesi": "PENGADMINISTRASIAN KANTOR",
+    "jabatan": "Pengadministrasi Perkantoran"
+  },
+  {
+    "id": 241,
+    "nama": "Dewi Wulan Sari",
+    "profesi": "PENGADMINISTRASIAN KANTOR",
+    "jabatan": "Pengadministrasi Perkantoran"
+  },
+  {
+    "id": 242,
+    "nama": "Helen Esra Debora, A.Md.Gz",
+    "profesi": "NUTRISIONIS",
+    "jabatan": "Nutrisionis Terampil"
+  },
+  {
+    "id": 243,
+    "nama": "Rismaniar Oktaviani,S.Gz",
+    "profesi": "NUTRISIONIS",
+    "jabatan": "Nutrisionis Ahli Muda"
+  },
+  {
+    "id": 244,
+    "nama": "ANGGI TRI NOVRIYANTI S, A.Md.Gz",
+    "profesi": "NUTRISIONIS",
+    "jabatan": "Nutrisionis Terampil"
+  },
+  {
+    "id": 245,
+    "nama": "GALUH SAFIRA EVANNI SUENTA, A.Md. Gz",
+    "profesi": "NUTRISIONIS",
+    "jabatan": "Nutrisionis Terampil"
+  },
+  {
+    "id": 246,
+    "nama": "DHINI NUGRAHENI, A.Md.Gz",
+    "profesi": "NUTRISIONIS",
+    "jabatan": "Nutrisionis Terampil"
+  },
+  {
+    "id": 247,
+    "nama": "DEWI DENADA, A.Md.Gz",
+    "profesi": "NUTRISIONIS",
+    "jabatan": "Nutrisionis Terampil"
+  },
+  {
+    "id": 248,
+    "nama": "Indah Lusitasari, S.T",
+    "profesi": "SANITARIAN",
+    "jabatan": "Sanitarian Ahli Pertama"
+  },
+  {
+    "id": 249,
+    "nama": "Lulu Ma’sumah, A.Md.Kes",
+    "profesi": "SANITARIAN",
+    "jabatan": "Sanitarian Terampil"
+  },
+  {
+    "id": 250,
+    "nama": "Dita Pamungkas, A.Md.KL",
+    "profesi": "SANITARIAN",
+    "jabatan": "Sanitarian Terampil"
+  },
+  {
+    "id": 251,
+    "nama": "Diah Ruri Anggita,SKM",
+    "profesi": "SANITARIAN",
+    "jabatan": "Tenaga Sanitasi Lingkungan Ahli Muda"
+  },
+  {
+    "id": 252,
+    "nama": "Rusmiati Hutapea,SKM",
+    "profesi": "SANITARIAN",
+    "jabatan": "Tenaga Sanitasi Lingkungan Mahir"
+  },
+  {
+    "id": 253,
+    "nama": "Hamisah, S.KM",
+    "profesi": "SANITARIAN",
+    "jabatan": "Tenaga Sanitasi Lingkungan Ahli Pertama"
+  },
+  {
+    "id": 254,
+    "nama": "Hana Novayanti, A.Md.K.L",
+    "profesi": "SANITARIAN",
+    "jabatan": "Tenaga Sanitasi Lingkungan Terampil"
+  },
+  {
+    "id": 255,
+    "nama": "Desi Indryani Embong Bulan,SKM",
+    "profesi": "PROMKES",
+    "jabatan": "Tenaga Promosi Kesehatan dan Ilmu Perilaku"
+  },
+  {
+    "id": 256,
+    "nama": "Aulia Minati,S.KM",
+    "profesi": "PROMKES",
+    "jabatan": "Tenaga Promosi Kesehatan dan Ilmu Perilaku"
+  },
+  {
+    "id": 257,
+    "nama": "Lina Rostiana,S.KM",
+    "profesi": "PROMKES",
+    "jabatan": "Penyuluh Kesehatan Masyarakat Ahli Pertama"
+  },
+  {
+    "id": 258,
+    "nama": "Muhammad Rae Febrian, SKM",
+    "profesi": "PROMKES",
+    "jabatan": "Tenaga Promosi Kesehatan dan Ilmu Perilaku"
+  },
+  {
+    "id": 259,
+    "nama": "Ade Rezeki,SST,M.Kes",
+    "profesi": "PENELAAH TEHNIS KEBIJAKAN",
+    "jabatan": "Penelaah Teknis Kebijakan"
+  },
+  {
+    "id": 260,
+    "nama": "Nurmala, SKM",
+    "profesi": "PENELAAH TEHNIS KEBIJAKAN",
+    "jabatan": "Penelaah Teknis Kebijakan"
+  },
+  {
+    "id": 261,
+    "nama": "Ika Heri Septiyani,S.M",
+    "profesi": "PENELAAH TEHNIS KEBIJAKAN",
+    "jabatan": "Penelaah Teknis Kebijakan"
+  },
+  {
+    "id": 262,
+    "nama": "Alexand Ramadhan,SE",
+    "profesi": "ANALIS SDM APARATUR",
+    "jabatan": "Analis Sumber Daya Manusia Aparatur Ahli Pertama"
+  },
+  {
+    "id": 263,
+    "nama": "Noval Adhitya Wardhana, S.Tr.Kes",
+    "profesi": "FISIOTERAPI",
+    "jabatan": "Fisioterapis Ahli Pertama"
+  },
+  {
+    "id": 264,
+    "nama": "Tiofanny Mukti Pangesti S.Tr.Kes.,Ftr.",
+    "profesi": "FISIOTERAPI",
+    "jabatan": "Fisioterapis Ahli Pertama"
+  },
+  {
+    "id": 265,
+    "nama": "Alfa Nur Khasanah, A.Md.Ft.",
+    "profesi": "FISIOTERAPI",
+    "jabatan": "FISIOTERAPIS TERAMPIL"
+  },
+  {
+    "id": 266,
+    "nama": "Pilailati Sari, A.Md.Fis",
+    "profesi": "FISIOTERAPI",
+    "jabatan": "FISIOTERAPIS TERAMPIL"
+  },
+  {
+    "id": 267,
+    "nama": "HELLIZA WIMANDA, AMD. FT",
+    "profesi": "FISIOTERAPI",
+    "jabatan": "FISIOTERAPIS TERAMPIL"
+  },
+  {
+    "id": 268,
+    "nama": "Wina Destari, Str.Kes",
+    "profesi": "RADIOGRAFER",
+    "jabatan": "Radiografer Pelaksana Lanjutan"
+  },
+  {
+    "id": 269,
+    "nama": "Abdul Kodir Jaelani,A.Md.Rad",
+    "profesi": "RADIOGRAFER",
+    "jabatan": "-"
+  },
+  {
+    "id": 270,
+    "nama": "Handri Firdaus,A.Md.Rad",
+    "profesi": "RADIOGRAFER",
+    "jabatan": "-"
+  },
+  {
+    "id": 271,
+    "nama": "Ario Galil Saputra,A.Md.Rad",
+    "profesi": "RADIOGRAFER",
+    "jabatan": "-"
+  },
+  {
+    "id": 272,
+    "nama": "Bella yulanda S.Tr.Kes",
+    "profesi": "RADIOGRAFER",
+    "jabatan": "Radiografer ahli pertama"
+  },
+  {
+    "id": 273,
+    "nama": "Yunita Ika Pangestuti, A.Md.Rad",
+    "profesi": "RADIOGRAFER",
+    "jabatan": "Radiografer Terampil"
+  },
+  {
+    "id": 274,
+    "nama": "Fadilah Aulia Akbar, A.Md.Rad",
+    "profesi": "RADIOGRAFER",
+    "jabatan": "Radiografer Terampil"
+  },
+  {
+    "id": 275,
+    "nama": "Afifah Wardini, A.Md. Rad",
+    "profesi": "RADIOGRAFER",
+    "jabatan": "Radiografer Terampil"
+  },
+  {
+    "id": 276,
+    "nama": "Asri Siti Luxyta, Amd",
+    "profesi": "PENATA ANASTESI",
+    "jabatan": "Asisten penata anestesi terampil"
+  },
+  {
+    "id": 277,
+    "nama": "Gilang Jati Kartiko Str.Kes",
+    "profesi": "PENATA ANASTESI",
+    "jabatan": "Asisten penata anestesi terampil"
+  },
+  {
+    "id": 278,
+    "nama": "Farah Azra Dwi Sabrina,S.Tr.Kes",
+    "profesi": "PENATA ANASTESI",
+    "jabatan": "-"
+  },
+  {
+    "id": 279,
+    "nama": "Muh. Lutfi Hidayat,S.Tr.Kes",
+    "profesi": "PENATA ANASTESI",
+    "jabatan": "-"
+  },
+  {
+    "id": 280,
+    "nama": "Agung Alaxka,S.Tr.Kes",
+    "profesi": "PENATA ANASTESI",
+    "jabatan": "-"
+  },
+  {
+    "id": 281,
+    "nama": "Tony Tristan Saputra S.Kom",
+    "profesi": "PRANATA KOMPUTER",
+    "jabatan": "Pranata Komputer Ahli Muda"
+  },
+  {
+    "id": 282,
+    "nama": "Abie Perdana Kusuma, S.Kom",
+    "profesi": "PRANATA KOMPUTER",
+    "jabatan": "Pranata Komputer Ahli Pertama"
+  },
+  {
+    "id": 283,
+    "nama": "Muhamad Lutfi, S.Kom",
+    "profesi": "PRANATA KOMPUTER",
+    "jabatan": "Pranata Komputer Ahli Pertama"
+  },
+  {
+    "id": 284,
+    "nama": "Sofatus Sa'adah,S.Kom",
+    "profesi": "IT SUPPORT",
+    "jabatan": "-"
+  },
+  {
+    "id": 285,
+    "nama": "Fauzan Nanung.S.Kom",
+    "profesi": "IT SUPPORT",
+    "jabatan": "-"
+  },
+  {
+    "id": 286,
+    "nama": "Apip",
+    "profesi": "IT SUPPORT",
+    "jabatan": "-"
+  },
+  {
+    "id": 287,
+    "nama": "Rulita Ainaya,S.KM",
+    "profesi": "K3",
+    "jabatan": "-"
+  },
+  {
+    "id": 288,
+    "nama": "Alifan Bagas Setiawan,ST",
+    "profesi": "TENAGA ELEKTRO",
+    "jabatan": "-"
+  },
+  {
+    "id": 289,
+    "nama": "REZQY LAILI MUNTHARI, S.KM.",
+    "profesi": "PENATA KELOLA LAYANAN KESEHATAN",
+    "jabatan": "PENATA KELOLA LAYANAN KESEHATAN"
+  },
+  {
+    "id": 290,
+    "nama": "Dyah Anggraini, A.Md.Gz",
+    "profesi": "PENGELOLA LAYANAN KESEHATAN",
+    "jabatan": "Pengelola Layanan Kesehatan"
+  },
+  {
+    "id": 291,
+    "nama": "Ummi Nurina Amalina, A.Md.Kep",
+    "profesi": "PENGELOLA LAYANAN KESEHATAN",
+    "jabatan": "Pengelola Layanan Kesehatan"
+  },
+  {
+    "id": 292,
+    "nama": "Achmad Ansori Yani,SH",
+    "profesi": "PENATA LAYANAN OPERASIONAL",
+    "jabatan": "Penata Layanan Operasional"
+  },
+  {
+    "id": 293,
+    "nama": "DHIO GUSTRIANDI,S.Sos",
+    "profesi": "PENATA LAYANAN OPERASIONAL",
+    "jabatan": "Penata Layanan Operasional"
+  },
+  {
+    "id": 294,
+    "nama": "DEDE SULAEMAN,S.IP",
+    "profesi": "PENATA LAYANAN OPERASIONAL",
+    "jabatan": "Penata Layanan Operasional"
+  },
+  {
+    "id": 295,
+    "nama": "ANGGI PERMANA PUTRA,SE",
+    "profesi": "PENATA LAYANAN OPERASIONAL",
+    "jabatan": "Penata Layanan Operasional"
+  },
+  {
+    "id": 296,
+    "nama": "Nida Hanifah Amatulloh,S.E.",
+    "profesi": "PENATA LAYANAN OPERASIONAL",
+    "jabatan": "Penata Layanan Operasional"
+  },
+  {
+    "id": 297,
+    "nama": "AHMAD OKKY NURDIANSAH, S.Kom",
+    "profesi": "PENATA LAYANAN OPERASIONAL",
+    "jabatan": "Penata Layanan Operasional"
+  },
+  {
+    "id": 298,
+    "nama": "Arie Misbach, S.Kom",
+    "profesi": "PENATA LAYANAN OPERASIONAL",
+    "jabatan": "Penata Layanan Operasional"
+  },
+  {
+    "id": 299,
+    "nama": "Haerul Ulum",
+    "profesi": "OPERATOR LAYANAN OPERASIONAL",
+    "jabatan": "Operator Layanan Operasional"
+  },
+  {
+    "id": 300,
+    "nama": "Ivakov Akbar, S. Tr. T",
+    "profesi": "ELEKTROMEDIS",
+    "jabatan": "Teknisi Elektromedis Ahli Pertama"
+  },
+  {
+    "id": 301,
+    "nama": "MIFTAHUL FUAD PUTRA UTAMA CG, AMTE",
+    "profesi": "ELEKTROMEDIS",
+    "jabatan": "Teknisi Elektromedis Terampil"
+  },
+  {
+    "id": 302,
+    "nama": "Yuga Maulana Akbar A.Md .T",
+    "profesi": "ELEKTROMEDIS",
+    "jabatan": "Teknisi Elektromedis Terampil"
+  },
+  {
+    "id": 303,
+    "nama": "Nabil Kurnia Fida,S.Kom",
+    "profesi": "BROADCASTING",
+    "jabatan": "-"
+  },
+  {
+    "id": 304,
+    "nama": "FADIA ASYA ZAHARANI, A.Md., Ak.",
+    "profesi": "ARSIPARIS",
+    "jabatan": "ARSIPARIS TERAMPIL"
+  },
+  {
+    "id": 305,
+    "nama": "Rustam Nawawi",
+    "profesi": "DRIVER",
+    "jabatan": "-"
+  },
+  {
+    "id": 306,
+    "nama": "Ocfa Aswar Mugnie",
+    "profesi": "DRIVER",
+    "jabatan": "-"
+  },
+  {
+    "id": 307,
+    "nama": "Jaenudin",
+    "profesi": "DRIVER",
+    "jabatan": "-"
+  },
+  {
+    "id": 308,
+    "nama": "Firman Syah",
+    "profesi": "DRIVER",
+    "jabatan": "-"
+  },
+  {
+    "id": 309,
+    "nama": "IKHSAN PRIMA ANUGRAH, SH",
+    "profesi": "TENAGA HUMAS DAN INFORMASI",
+    "jabatan": "-"
+  },
+  {
+    "id": 310,
+    "nama": "FAJARUDIN CAHYA NUGRAHA",
+    "profesi": "TENAGA IPSRS",
+    "jabatan": "-"
+  },
+  {
+    "id": 311,
+    "nama": "MUHAMAD ARYA WIGUNA",
+    "profesi": "TENAGA REKAM MEDIS",
+    "jabatan": "-"
+  },
+  {
+    "id": 312,
+    "nama": "ATHIYYAH NUSAIBAH",
+    "profesi": "TENAGA FARMASI",
+    "jabatan": "-"
+  },
+  {
+    "id": 313,
+    "nama": "HARIS SETIAWAN",
+    "profesi": "TENAGA CASEMIX",
+    "jabatan": "-"
+  },
+  {
+    "id": 314,
+    "nama": "RISYYA PRYLIA RIDWAN",
+    "profesi": "TENAGA PEMBANTU ORANG SAKIT (POS)",
+    "jabatan": "-"
+  },
+  {
+    "id": 315,
+    "nama": "DEDI",
+    "profesi": "TENAGA PEMBANTU ORANG SAKIT (POS)",
+    "jabatan": "-"
+  },
+  {
+    "id": 316,
+    "nama": "ELIS RAHMAWATI",
+    "profesi": "TENAGA PEMBANTU ORANG SAKIT (POS)",
+    "jabatan": "-"
+  },
+  {
+    "id": 317,
+    "nama": "LINA RUSTIANA",
+    "profesi": "TENAGA PEMBANTU ORANG SAKIT (POS)",
+    "jabatan": "-"
+  },
+  {
+    "id": 318,
+    "nama": "ERIN",
+    "profesi": "TENAGA PEMBANTU ORANG SAKIT (POS)",
+    "jabatan": "-"
+  },
+  {
+    "id": 319,
+    "nama": "RAEFAL FAUZHDIL ADIM",
+    "profesi": "TENAGA KASIR",
+    "jabatan": "-"
+  },
+  {
+    "id": 320,
+    "nama": "KARINA DWISEPTIANI",
+    "profesi": "TENAGA KASIR",
+    "jabatan": "-"
+  },
+  {
+    "id": 321,
+    "nama": "MUPTI NASIRI",
+    "profesi": "TENAGA CSSD",
+    "jabatan": "-"
+  },
+  {
+    "id": 322,
+    "nama": "ARDIANSYAH",
+    "profesi": "TENAGA CSSD",
+    "jabatan": "-"
+  },
+  {
+    "id": 323,
+    "nama": "NURISNI ABDUL HIJAR",
+    "profesi": "TENAGA LOGISTIK",
+    "jabatan": "-"
+  },
+  {
+    "id": 324,
+    "nama": "dr.MUHAMMAD IKMAL SYAFI'I",
+    "profesi": "DOKTER UMUM BLUD",
+    "jabatan": "-"
+  },
+  {
+    "id": 325,
+    "nama": "dr.FIRDA SURYA PRADISA",
+    "profesi": "DOKTER UMUM BLUD",
+    "jabatan": "-"
+  },
+  {
+    "id": 326,
+    "nama": "dr.ALIF RIZKY HAFIZHDILLAH",
+    "profesi": "DOKTER UMUM BLUD",
+    "jabatan": "-"
+  },
+  {
+    "id": 327,
+    "nama": "dr.VELLA SIANECHA AZAH TESLA BOSE",
+    "profesi": "DOKTER UMUM BLUD",
+    "jabatan": "-"
+  },
+  {
+    "id": 328,
+    "nama": "Maitri Siska, S.Kep., Ns",
+    "profesi": "PERAWAT BLUD",
+    "jabatan": "-"
+  },
+  {
+    "id": 329,
+    "nama": "Ns. Sinta Bela, S.Kep",
+    "profesi": "PERAWAT BLUD",
+    "jabatan": "-"
+  },
+  {
+    "id": 330,
+    "nama": "Riska Natalya, S.Kep., Ners",
+    "profesi": "PERAWAT BLUD",
+    "jabatan": "-"
+  },
+  {
+    "id": 331,
+    "nama": "Ns. Amalia Sholiha, S.Tr.Kep",
+    "profesi": "PERAWAT BLUD",
+    "jabatan": "-"
+  },
+  {
+    "id": 332,
+    "nama": "Ns. Windi Puji Astuti, S.Kep",
+    "profesi": "PERAWAT BLUD",
+    "jabatan": "-"
+  },
+  {
+    "id": 333,
+    "nama": "Ns. Tiara Anggraeni, S.Kep",
+    "profesi": "PERAWAT BLUD",
+    "jabatan": "-"
+  },
+  {
+    "id": 334,
+    "nama": "Ns. lik Fajriyah, S.Kep",
+    "profesi": "PERAWAT BLUD",
+    "jabatan": "-"
+  },
+  {
+    "id": 335,
+    "nama": "Ns. Agnia Nurul Anggraini, S.Kep",
+    "profesi": "PERAWAT BLUD",
+    "jabatan": "-"
+  },
+  {
+    "id": 336,
+    "nama": "Ns. Dwie Ulfa Marfuah, S.Kep",
+    "profesi": "PERAWAT BLUD",
+    "jabatan": "-"
+  },
+  {
+    "id": 337,
+    "nama": "Ns. Ahmad Kurtusi, S.Kep",
+    "profesi": "PERAWAT BLUD",
+    "jabatan": "-"
+  },
+  {
+    "id": 338,
+    "nama": "Ns. Dede Rizki Rahayu, S.Kep",
+    "profesi": "PERAWAT BLUD",
+    "jabatan": "-"
+  },
+  {
+    "id": 339,
+    "nama": "Ns. M. Nur Paqih S.Kep",
+    "profesi": "PERAWAT BLUD",
+    "jabatan": "-"
+  },
+  {
+    "id": 340,
+    "nama": "Ns. Mohamad Dedi Romansyah, S.Kep",
+    "profesi": "PERAWAT BLUD",
+    "jabatan": "-"
+  },
+  {
+    "id": 341,
+    "nama": "Ns. Siti Yunisatul Qibtiah, S.Kep",
+    "profesi": "PERAWAT BLUD",
+    "jabatan": "-"
+  },
+  {
+    "id": 342,
+    "nama": "Ns. Dina Mulyana S.kep",
+    "profesi": "PERAWAT BLUD",
+    "jabatan": "-"
+  },
+  {
+    "id": 343,
+    "nama": "Ns. Bides lndra Cahya, S.Kep",
+    "profesi": "PERAWAT BLUD",
+    "jabatan": "-"
+  },
+  {
+    "id": 344,
+    "nama": "Ns. Neneng Rina Damayanti, S.Kep",
+    "profesi": "PERAWAT BLUD",
+    "jabatan": "-"
+  },
+  {
+    "id": 345,
+    "nama": "Ns. Siti Aisah, S.Kep",
+    "profesi": "PERAWAT BLUD",
+    "jabatan": "-"
+  },
+  {
+    "id": 346,
+    "nama": "Ns. Dwi Ayu Lestari, S.Kep",
+    "profesi": "PERAWAT BLUD",
+    "jabatan": "-"
+  },
+  {
+    "id": 347,
+    "nama": "Ns. Muhammad Nawazir, S.Kep",
+    "profesi": "PERAWAT BLUD",
+    "jabatan": "-"
+  },
+  {
+    "id": 348,
+    "nama": "Ns. Krisna Dewangga, S.Kep",
+    "profesi": "PERAWAT BLUD",
+    "jabatan": "-"
+  },
+  {
+    "id": 349,
+    "nama": "Ns. Nurbaeti, S.Kep",
+    "profesi": "PERAWAT BLUD",
+    "jabatan": "-"
+  },
+  {
+    "id": 350,
+    "nama": "Ns. Muhamad Rizki Fadhlillah, S.Kep",
+    "profesi": "PERAWAT BLUD",
+    "jabatan": "-"
+  },
+  {
+    "id": 351,
+    "nama": "Ns. Dinda Puspitaningrum, S.Kep",
+    "profesi": "PERAWAT BLUD",
+    "jabatan": "-"
+  },
+  {
+    "id": 352,
+    "nama": "Ns. Siti Medika Sastika Pertiwi, S.Kep",
+    "profesi": "PERAWAT BLUD",
+    "jabatan": "-"
+  },
+  {
+    "id": 353,
+    "nama": "Ns.Amelia Hasya, S.Kep",
+    "profesi": "PERAWAT BLUD",
+    "jabatan": "-"
+  },
+  {
+    "id": 354,
+    "nama": "Ns. Annisa Rizqia, S.Kep",
+    "profesi": "PERAWAT BLUD",
+    "jabatan": "-"
+  },
+  {
+    "id": 355,
+    "nama": "Arismunandar,  Amd.Kep",
+    "profesi": "PERAWAT BLUD",
+    "jabatan": "-"
+  }
+]
