@@ -1,13 +1,29 @@
 import React, { useState } from 'react';
+import ReactDOM from 'react-dom';
 import { useAgenda } from '../context/AgendaContext';
 import { useAuth } from '../context/AuthContext';
 import CreateAgendaModal from '../components/CreateAgendaModal';
 import Toast from '../components/Toast';
 import { 
-  Trash2, Pencil, CheckCircle2, Circle, X, Upload, 
+  Trash2, Pencil, CheckCircle2, Circle, X, Upload, Eye, FileText, ExternalLink,
   Calendar as CalendarIcon, Search, Filter, RotateCcw, 
   ChevronLeft, ChevronRight 
 } from 'lucide-react';
+
+const API_URL = import.meta.env.VITE_API_URL !== undefined ? import.meta.env.VITE_API_URL : '';
+
+const getPdfUrl = (fileEntry) => {
+  if (!fileEntry) return null;
+  if (typeof fileEntry === 'string') {
+    if (fileEntry.startsWith('data:') || fileEntry.startsWith('http')) return fileEntry;
+    return `${API_URL}${fileEntry}`;
+  }
+  if (fileEntry.url) {
+    if (fileEntry.url.startsWith('data:') || fileEntry.url.startsWith('http')) return fileEntry.url;
+    return `${API_URL}${fileEntry.url}`;
+  }
+  return null;
+};
 
 const AgendaManagement = () => {
   const { agendas, deleteAgenda, uploadAdminFile, removeAdminFile } = useAgenda();
@@ -16,6 +32,7 @@ const AgendaManagement = () => {
   const [editingAgenda, setEditingAgenda] = useState(null);
   const [showCalendar, setShowCalendar] = useState(false);
   const [calendarMonth, setCalendarMonth] = useState(new Date());
+  const [previewPdf, setPreviewPdf] = useState(null);
   
   // Filter & Toast states
   const [searchQuery, setSearchQuery] = useState('');
@@ -69,36 +86,68 @@ const AgendaManagement = () => {
   };
 
   const renderAdminCheck = (agenda, field) => {
-    const statusText = agenda.admin[field];
-    const fileName = agenda.adminFiles?.[field];
+    const statusText = agenda.admin?.[field];
+    const fileEntry = agenda.adminFiles?.[field];
     const isDone = statusText === 'Sudah Selesai';
+    const fileName = typeof fileEntry === 'object' ? fileEntry?.name : (typeof fileEntry === 'string' ? fileEntry : 'Dokumen PDF');
+    const pdfUrl = getPdfUrl(fileEntry);
     
+    const fieldLabels = {
+      suratTugas: 'Surat Tugas',
+      undangan: 'Surat Undangan',
+      notaDinas: 'Nota Dinas'
+    };
+
     return (
       <div 
         style={{ 
-          display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative'
+          display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '0.3rem', position: 'relative'
         }}
-        title={fileName || "Belum ada file PDF terlampir"}
+        title={fileName ? `Klik untuk preview PDF: ${fileName}` : "Belum ada file PDF terlampir"}
       >
         {isDone ? (
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', color: 'var(--color-status-green)' }}>
-            <CheckCircle2 size={20} />
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.3rem', color: 'var(--color-status-green)' }}>
+            <button 
+              onClick={() => {
+                if (pdfUrl) {
+                  setPreviewPdf({
+                    title: `${fieldLabels[field] || 'Dokumen'} - ${agenda.title}`,
+                    name: fileName,
+                    url: pdfUrl
+                  });
+                } else {
+                  showToast('File PDF belum tersedia untuk dipreview', 'error');
+                }
+              }}
+              style={{
+                display: 'flex', alignItems: 'center', gap: '0.25rem',
+                background: 'rgba(34, 197, 94, 0.12)', border: '1px solid rgba(34, 197, 94, 0.3)',
+                color: 'var(--color-status-green)', padding: '0.2rem 0.45rem', borderRadius: '6px',
+                fontSize: '0.75rem', fontWeight: '700', cursor: 'pointer',
+                transition: 'all 0.2s ease'
+              }}
+              title="Klik untuk Preview PDF"
+            >
+              <CheckCircle2 size={15} />
+              <Eye size={13} color="var(--color-primary-blue)" />
+            </button>
+
             {user?.role === 'admin' && (
               <button onClick={() => {
                 if (window.confirm(`Hapus lampiran PDF untuk dokumen ini?`)) {
                   removeAdminFile(agenda.id, field);
                   showToast('Lampiran PDF berhasil dihapus', 'info');
                 }
-              }} style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--color-status-red)', padding: 0 }}>
-                <X size={14} />
+              }} style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--color-status-red)', padding: '0.15rem', display: 'flex', alignItems: 'center' }} title="Hapus PDF">
+                <X size={13} />
               </button>
             )}
           </div>
         ) : (
-          <div style={{ position: 'relative', width: '20px', height: '20px', color: '#94a3b8', transition: 'color 0.2s' }}
+          <div style={{ position: 'relative', width: '18px', height: '18px', color: '#94a3b8', transition: 'color 0.2s' }}
                onMouseOver={e => e.currentTarget.style.color = 'var(--color-primary-blue)'}
                onMouseOut={e => e.currentTarget.style.color = '#94a3b8'}>
-            <Upload size={20} style={{ position: 'absolute', top: 0, left: 0 }} />
+            <Upload size={18} style={{ position: 'absolute', top: 0, left: 0 }} />
             {user?.role === 'admin' && (
               <input 
                 type="file" 
@@ -156,28 +205,28 @@ const AgendaManagement = () => {
     <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
       <Toast message={toast.message} type={toast.type} onClose={() => setToast({ message: '', type: 'success' })} />
 
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '0.75rem' }}>
         <div>
-          <h2 style={{ fontSize: '1.5rem', fontWeight: '700', color: 'var(--text-main)' }}>Daftar Seluruh Agenda</h2>
-          <p style={{ color: 'var(--text-muted)' }}>Kelola semua jadwal rapat dan kegiatan RSUD di sini.</p>
+          <h2 style={{ fontSize: '1.2rem', fontWeight: '800', color: 'var(--text-main)', margin: 0 }}>Daftar Seluruh Agenda</h2>
+          <p style={{ color: 'var(--text-muted)', fontSize: '0.82rem', margin: '0.15rem 0 0 0' }}>Kelola semua jadwal rapat dan kegiatan RSUD di sini.</p>
         </div>
-        <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
+        <div style={{ display: 'flex', gap: '0.6rem', flexWrap: 'wrap' }}>
           <button onClick={() => setShowCalendar(true)} style={{
-            padding: '0.75rem 1.25rem', borderRadius: '12px',
+            padding: '0.45rem 0.9rem', borderRadius: '10px',
             border: dateFilter ? '2px solid var(--color-primary-blue)' : '1px solid rgba(14,165,233,0.3)',
-            background: dateFilter ? 'rgba(14,165,233,0.08)' : 'white', display: 'flex', alignItems: 'center', gap: '0.5rem',
-            color: 'var(--color-primary-blue)', fontWeight: '700', cursor: 'pointer',
-            boxShadow: '0 2px 8px rgba(0,0,0,0.02)'
+            background: dateFilter ? 'rgba(14,165,233,0.08)' : 'white', display: 'flex', alignItems: 'center', gap: '0.4rem',
+            color: 'var(--color-primary-blue)', fontWeight: '700', fontSize: '0.8rem', cursor: 'pointer',
+            boxShadow: '0 2px 6px rgba(0,0,0,0.02)'
           }}>
-            <CalendarIcon size={18} /> {dateFilter ? `Filter: ${new Date(dateFilter + 'T00:00:00').toLocaleDateString('id-ID', { day: 'numeric', month: 'short' })}` : 'Kalender Filter'}
+            <CalendarIcon size={15} /> {dateFilter ? `Filter: ${new Date(dateFilter + 'T00:00:00').toLocaleDateString('id-ID', { day: 'numeric', month: 'short' })}` : 'Kalender Filter'}
           </button>
           
           {user?.role === 'admin' && (
             <button onClick={() => setIsModalOpen(true)} style={{
-              padding: '0.75rem 1.5rem', borderRadius: '12px', border: 'none',
+              padding: '0.45rem 1rem', borderRadius: '10px', border: 'none',
               background: 'linear-gradient(135deg, var(--color-primary-blue), var(--color-primary-green))',
-              color: 'white', fontWeight: '600', cursor: 'pointer',
-              boxShadow: '0 4px 15px rgba(14,165,233,0.3)'
+              color: 'white', fontWeight: '700', fontSize: '0.8rem', cursor: 'pointer',
+              boxShadow: '0 3px 12px rgba(14,165,233,0.3)'
             }}>
               + Tambah Agenda Baru
             </button>
@@ -186,31 +235,31 @@ const AgendaManagement = () => {
       </div>
 
       {/* Filter & Search Bar */}
-      <div className="card" style={{ padding: '1rem 1.25rem', display: 'flex', gap: '1rem', alignItems: 'center', flexWrap: 'wrap' }}>
-        <div style={{ flex: '1 1 230px', position: 'relative', display: 'flex', alignItems: 'center' }}>
-          <Search size={18} color="#94a3b8" style={{ position: 'absolute', left: '0.85rem' }} />
+      <div className="card" style={{ padding: '0.75rem 1rem', display: 'flex', gap: '0.75rem', alignItems: 'center', flexWrap: 'wrap' }}>
+        <div style={{ flex: '1 1 320px', position: 'relative', display: 'flex', alignItems: 'center' }}>
+          <Search size={16} color="#94a3b8" style={{ position: 'absolute', left: '0.75rem' }} />
           <input 
             type="text" 
             placeholder="Cari judul agenda, lokasi, atau peserta..." 
             value={searchQuery}
             onChange={(e) => { setSearchQuery(e.target.value); setCurrentPage(1); }}
             style={{
-              width: '100%', padding: '0.65rem 0.85rem 0.65rem 2.5rem', borderRadius: '10px',
+              width: '100%', padding: '0.45rem 0.75rem 0.45rem 2.2rem', borderRadius: '8px',
               border: '1px solid var(--border-glass)', background: 'var(--bg-main)',
-              color: 'var(--text-main)', outline: 'none', fontSize: '0.9rem'
+              color: 'var(--text-main)', outline: 'none', fontSize: '0.82rem'
             }}
           />
         </div>
 
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-          <Filter size={16} color="var(--text-muted)" />
-          <span style={{ fontSize: '0.85rem', fontWeight: '600', color: 'var(--text-muted)' }}>Kategori:</span>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+          <Filter size={15} color="var(--text-muted)" />
+          <span style={{ fontSize: '0.8rem', fontWeight: '600', color: 'var(--text-muted)' }}>Kategori:</span>
           <select 
             value={categoryFilter} 
             onChange={(e) => { setCategoryFilter(e.target.value); setCurrentPage(1); }}
             style={{
-              padding: '0.65rem 1rem', borderRadius: '10px', border: '1px solid var(--border-glass)',
-              background: 'var(--bg-main)', color: 'var(--text-main)', outline: 'none', fontSize: '0.9rem', fontWeight: '600'
+              padding: '0.45rem 0.85rem', borderRadius: '8px', border: '1px solid var(--border-glass)',
+              background: 'var(--bg-main)', color: 'var(--text-main)', outline: 'none', fontSize: '0.82rem', fontWeight: '600'
             }}
           >
             <option value="Semua">Semua Kategori</option>
@@ -219,21 +268,15 @@ const AgendaManagement = () => {
           </select>
         </div>
 
-        {/* Date Filter Badge if Active */}
         {dateFilter && (
-          <div style={{
-            display: 'flex', alignItems: 'center', gap: '0.4rem',
-            padding: '0.55rem 0.85rem', background: 'rgba(14,165,233,0.12)',
-            color: 'var(--color-primary-blue)', border: '1px solid rgba(14,165,233,0.3)',
-            borderRadius: '10px', fontSize: '0.85rem', fontWeight: '700'
-          }}>
-            <CalendarIcon size={14} /> Tanggal: {new Date(dateFilter + 'T00:00:00').toLocaleDateString('id-ID', { day: 'numeric', month: 'short', year: 'numeric' })}
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.35rem', padding: '0.35rem 0.65rem', borderRadius: '8px', background: 'rgba(14,165,233,0.1)', color: 'var(--color-primary-blue)', fontSize: '0.78rem', fontWeight: '600' }}>
+            <CalendarIcon size={13} /> Tanggal: {new Date(dateFilter + 'T00:00:00').toLocaleDateString('id-ID', { day: 'numeric', month: 'short', year: 'numeric' })}
             <button 
               onClick={() => { setDateFilter(''); setCurrentPage(1); }} 
-              style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--color-status-red)', display: 'flex', alignItems: 'center', padding: '0 0 0 0.25rem' }} 
+              style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--color-status-red)', display: 'flex', alignItems: 'center', padding: '0 0 0 0.2rem' }} 
               title="Hapus Filter Tanggal"
             >
-              <X size={14} />
+              <X size={13} />
             </button>
           </div>
         )}
@@ -242,43 +285,43 @@ const AgendaManagement = () => {
           <button 
             onClick={resetAllFilters}
             style={{
-              display: 'flex', alignItems: 'center', gap: '0.35rem', padding: '0.65rem 1rem',
-              borderRadius: '10px', border: '1px solid #cbd5e1', background: 'white', color: '#475569',
-              fontSize: '0.85rem', fontWeight: '600', cursor: 'pointer'
+              display: 'flex', alignItems: 'center', gap: '0.3rem', padding: '0.45rem 0.85rem',
+              borderRadius: '8px', border: '1px solid #cbd5e1', background: 'white', color: '#475569',
+              fontSize: '0.78rem', fontWeight: '600', cursor: 'pointer'
             }}
           >
-            <RotateCcw size={14} /> Reset Filter
+            <RotateCcw size={13} /> Reset Filter
           </button>
         )}
       </div>
 
-      <div className="card" style={{ overflowX: 'auto', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-        <table style={{ width: '100%', minWidth: '950px', borderCollapse: 'collapse', textAlign: 'left', fontSize: '0.95rem' }}>
+      <div className="card" style={{ overflowX: 'auto', display: 'flex', flexDirection: 'column', gap: '0.75rem', padding: '0.85rem 1rem' }}>
+        <table style={{ width: '100%', minWidth: '900px', borderCollapse: 'collapse', textAlign: 'left', fontSize: '0.82rem' }}>
           <thead>
             <tr style={{ borderBottom: '2px solid var(--border-glass)', color: 'var(--text-muted)' }}>
-              <th style={{ padding: '1rem' }}>Tanggal</th>
-              <th style={{ padding: '1rem' }}>Waktu</th>
-              <th style={{ padding: '1rem' }}>Judul Kegiatan</th>
-              <th style={{ padding: '1rem' }}>Lokasi</th>
-              <th style={{ padding: '1rem' }}>PIC / Hadir</th>
-              <th style={{ padding: '1rem', textAlign: 'center' }} title="Surat Tugas">S. Tugas</th>
-              <th style={{ padding: '1rem', textAlign: 'center' }} title="Surat Undangan">Undangan</th>
-              <th style={{ padding: '1rem', textAlign: 'center' }} title="Nota Dinas">N. Dinas</th>
-              {user?.role === 'admin' && <th style={{ padding: '1rem', textAlign: 'center' }}>Aksi</th>}
+              <th style={{ padding: '0.6rem 0.75rem' }}>Tanggal</th>
+              <th style={{ padding: '0.6rem 0.75rem' }}>Waktu</th>
+              <th style={{ padding: '0.6rem 0.75rem' }}>Judul Kegiatan</th>
+              <th style={{ padding: '0.6rem 0.75rem' }}>Lokasi</th>
+              <th style={{ padding: '0.6rem 0.75rem' }}>PIC / Hadir</th>
+              <th style={{ padding: '0.6rem 0.75rem', textAlign: 'center' }} title="Surat Tugas">S. Tugas</th>
+              <th style={{ padding: '0.6rem 0.75rem', textAlign: 'center' }} title="Surat Undangan">Undangan</th>
+              <th style={{ padding: '0.6rem 0.75rem', textAlign: 'center' }} title="Nota Dinas">N. Dinas</th>
+              {user?.role === 'admin' && <th style={{ padding: '0.6rem 0.75rem', textAlign: 'center' }}>Aksi</th>}
             </tr>
           </thead>
           <tbody>
             {paginatedAgendas.length === 0 ? (
               <tr>
-                <td colSpan={user?.role === 'admin' ? 9 : 8} style={{ padding: '3rem 1rem', textAlign: 'center', color: 'var(--text-muted)' }}>
-                  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.75rem' }}>
-                    <Search size={40} color="#cbd5e1" />
-                    <div style={{ fontWeight: '700', fontSize: '1.05rem', color: '#64748b' }}>Agenda Tidak Ditemukan</div>
-                    <div style={{ fontSize: '0.85rem' }}>Tidak ada agenda yang cocok dengan pencarian atau filter yang dipilih.</div>
+                <td colSpan={user?.role === 'admin' ? 9 : 8} style={{ padding: '2rem 1rem', textAlign: 'center', color: 'var(--text-muted)' }}>
+                  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem' }}>
+                    <Search size={32} color="#cbd5e1" />
+                    <div style={{ fontWeight: '700', fontSize: '0.95rem', color: '#64748b' }}>Agenda Tidak Ditemukan</div>
+                    <div style={{ fontSize: '0.8rem' }}>Tidak ada agenda yang cocok dengan pencarian atau filter yang dipilih.</div>
                     {(searchQuery || categoryFilter !== 'Semua' || dateFilter) && (
                       <button 
                         onClick={resetAllFilters}
-                        style={{ marginTop: '0.5rem', padding: '0.5rem 1rem', borderRadius: '8px', border: 'none', background: 'var(--color-primary-blue)', color: 'white', fontWeight: '600', cursor: 'pointer' }}
+                        style={{ marginTop: '0.35rem', padding: '0.4rem 0.85rem', borderRadius: '8px', border: 'none', background: 'var(--color-primary-blue)', color: 'white', fontWeight: '600', fontSize: '0.78rem', cursor: 'pointer' }}
                       >
                         Reset Filter Pencarian & Tanggal
                       </button>
@@ -288,42 +331,42 @@ const AgendaManagement = () => {
               </tr>
             ) : paginatedAgendas.map((agenda) => (
               <tr key={agenda.id} style={{ borderBottom: '1px solid var(--border-glass)', transition: 'background 0.2s' }}>
-                <td style={{ padding: '1rem', whiteSpace: 'nowrap', fontWeight: '600' }}>
+                <td style={{ padding: '0.65rem 0.75rem', whiteSpace: 'nowrap', fontWeight: '600' }}>
                   {new Date(agenda.date + 'T00:00:00').toLocaleDateString('id-ID', { day: 'numeric', month: 'short', year: 'numeric' })}
                 </td>
-                <td style={{ padding: '1rem', whiteSpace: 'nowrap', color: 'var(--text-muted)', fontSize: '0.85rem' }}>
+                <td style={{ padding: '0.65rem 0.75rem', whiteSpace: 'nowrap', color: 'var(--text-muted)', fontSize: '0.78rem' }}>
                   {agenda.timeStart} - {agenda.timeEnd}
                 </td>
-                <td style={{ padding: '1rem', fontWeight: '700', color: 'var(--text-main)', maxWidth: '280px' }}>
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.25rem' }}>
-                    <span>{agenda.title}</span>
-                    <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
-                      <span className="badge" style={{ backgroundColor: agenda.color, fontSize: '0.7rem', padding: '0.2rem 0.6rem' }}>{agenda.status}</span>
-                      <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)', background: 'rgba(0,0,0,0.05)', padding: '0.2rem 0.5rem', borderRadius: '6px' }}>{agenda.category}</span>
+                <td style={{ padding: '0.65rem 0.75rem', fontWeight: '700', color: 'var(--text-main)', maxWidth: '280px' }}>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.2rem' }}>
+                    <span style={{ fontSize: '0.85rem', lineHeight: '1.3' }}>{agenda.title}</span>
+                    <div style={{ display: 'flex', gap: '0.35rem', alignItems: 'center' }}>
+                      <span className="badge" style={{ backgroundColor: agenda.color, fontSize: '0.65rem', padding: '0.15rem 0.5rem' }}>{agenda.status}</span>
+                      <span style={{ fontSize: '0.68rem', color: 'var(--text-muted)', background: 'rgba(0,0,0,0.05)', padding: '0.15rem 0.45rem', borderRadius: '5px' }}>{agenda.category}</span>
                     </div>
                     {agenda.note && (
-                      <span style={{ fontSize: '0.75rem', color: '#92400e', background: '#fffbeb', border: '1px solid #fde68a', padding: '0.2rem 0.5rem', borderRadius: '6px', marginTop: '0.2rem' }}>
+                      <span style={{ fontSize: '0.68rem', color: '#92400e', background: '#fffbeb', border: '1px solid #fde68a', padding: '0.15rem 0.45rem', borderRadius: '5px', marginTop: '0.15rem' }}>
                         📌 Catatan: {agenda.note}
                       </span>
                     )}
                   </div>
                 </td>
-                <td style={{ padding: '1rem', color: 'var(--text-muted)', fontSize: '0.85rem' }}>{agenda.location}</td>
-                <td style={{ padding: '1rem', color: 'var(--text-muted)', fontSize: '0.85rem' }}>{agenda.attendees || agenda.pic}</td>
+                <td style={{ padding: '0.65rem 0.75rem', color: 'var(--text-muted)', fontSize: '0.78rem' }}>{agenda.location}</td>
+                <td style={{ padding: '0.65rem 0.75rem', color: 'var(--text-muted)', fontSize: '0.78rem' }}>{agenda.attendees || agenda.pic}</td>
                 
-                <td style={{ padding: '1rem' }}>{renderAdminCheck(agenda, 'suratTugas')}</td>
-                <td style={{ padding: '1rem' }}>{renderAdminCheck(agenda, 'undangan')}</td>
-                <td style={{ padding: '1rem' }}>{renderAdminCheck(agenda, 'notaDinas')}</td>
+                <td style={{ padding: '0.65rem 0.75rem' }}>{renderAdminCheck(agenda, 'suratTugas')}</td>
+                <td style={{ padding: '0.65rem 0.75rem' }}>{renderAdminCheck(agenda, 'undangan')}</td>
+                <td style={{ padding: '0.65rem 0.75rem' }}>{renderAdminCheck(agenda, 'notaDinas')}</td>
                 
                 {user?.role === 'admin' && (
-                  <td style={{ padding: '1rem', textAlign: 'center' }}>
-                    <div style={{ display: 'flex', gap: '0.5rem', justifyContent: 'center' }}>
+                  <td style={{ padding: '0.65rem 0.75rem', textAlign: 'center' }}>
+                    <div style={{ display: 'flex', gap: '0.4rem', justifyContent: 'center' }}>
                       <button 
                         onClick={() => setEditingAgenda(agenda)}
                         style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--color-primary-blue)', padding: '0.4rem' }}
                         title="Edit Agenda"
                       >
-                        <Pencil size={18} />
+                        <Pencil size={16} />
                       </button>
                       <button 
                         onClick={() => { if(window.confirm('Yakin ingin menghapus agenda ini?')) { deleteAgenda(agenda.id); showToast('Agenda berhasil dihapus', 'info'); } }}
@@ -484,6 +527,71 @@ const AgendaManagement = () => {
 
           </div>
         </div>
+      )}
+
+      {/* PDF PREVIEW MODAL */}
+      {previewPdf && (
+        ReactDOM.createPortal(
+          <div style={{
+            position: 'fixed', top: 0, left: 0, width: '100vw', height: '100vh',
+            background: 'rgba(15, 23, 42, 0.75)', backdropFilter: 'blur(8px)', WebkitBackdropFilter: 'blur(8px)',
+            zIndex: 999999, display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '1rem'
+          }}>
+            <div style={{
+              background: 'white', borderRadius: '16px', padding: '1.25rem',
+              width: '100%', maxWidth: '880px', height: '88vh', display: 'flex',
+              flexDirection: 'column', gap: '0.75rem', boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.35)',
+              border: '1px solid #e2e8f0', color: '#1e293b'
+            }}>
+              {/* Header */}
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderBottom: '1px solid #e2e8f0', paddingBottom: '0.65rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', minWidth: 0, flex: 1 }}>
+                  <FileText size={22} color="var(--color-primary-blue)" style={{ flexShrink: 0 }} />
+                  <div style={{ minWidth: 0 }}>
+                    <h3 style={{ fontSize: '0.95rem', fontWeight: '800', margin: 0, color: '#0f172a', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                      {previewPdf.title}
+                    </h3>
+                    <p style={{ fontSize: '0.75rem', color: '#64748b', margin: '0.1rem 0 0 0', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                      📄 {previewPdf.name || 'Dokumen PDF Terlampir'}
+                    </p>
+                  </div>
+                </div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', flexShrink: 0 }}>
+                  <a 
+                    href={previewPdf.url} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    style={{
+                      display: 'flex', alignItems: 'center', gap: '0.35rem',
+                      padding: '0.45rem 0.85rem', borderRadius: '8px',
+                      background: 'rgba(14,165,233,0.1)', color: 'var(--color-primary-blue)',
+                      fontSize: '0.78rem', fontWeight: '700', textDecoration: 'none',
+                      border: '1px solid rgba(14,165,233,0.25)'
+                    }}
+                  >
+                    <ExternalLink size={14} /> Buka Tab Baru
+                  </a>
+                  <button 
+                    onClick={() => setPreviewPdf(null)} 
+                    style={{ background: 'none', border: 'none', cursor: 'pointer', color: '#64748b', display: 'flex', alignItems: 'center', padding: '0.3rem' }}
+                  >
+                    <X size={22} />
+                  </button>
+                </div>
+              </div>
+
+              {/* PDF Viewer */}
+              <div style={{ flex: 1, background: '#f8fafc', borderRadius: '10px', overflow: 'hidden', border: '1px solid #e2e8f0', position: 'relative' }}>
+                <iframe 
+                  src={previewPdf.url} 
+                  title="PDF Preview" 
+                  style={{ width: '100%', height: '100%', border: 'none' }}
+                ></iframe>
+              </div>
+            </div>
+          </div>,
+          document.body
+        )
       )}
     </div>
   );

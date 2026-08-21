@@ -101,8 +101,8 @@ async function initDatabase() {
   if (parseInt(usersCount.rows[0].count) === 0) {
     console.log('Migrating users and settings to PostgreSQL...');
     let settingsData = {
-      emailSender: 'umpegrsud3raksa@gmail.com',
-      emailPassword: 'zymi fjyj xnlv xbbz',
+      emailSender: process.env.EMAIL_SENDER || 'umpegrsud3raksa@gmail.com',
+      emailPassword: process.env.EMAIL_PASSWORD || '',
       emailRecipients: ['xhdprime@gmail.com'],
       emailSchedule: '07:00',
       users: [

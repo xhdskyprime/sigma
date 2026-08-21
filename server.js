@@ -51,128 +51,218 @@ const authenticateToken = (req, res, next) => {
   });
 };
 
-// Database Helpers
-async function getSettings() {
+// Database Availability Helper
+let dbAvailable = null;
+
+async function isDbAvailable() {
+  if (dbAvailable !== null) return dbAvailable;
   try {
-    const res = await pool.query('SELECT * FROM settings WHERE id = 1');
-    if (res.rows.length === 0) {
-      return { emailSender: '', emailPassword: '', emailRecipients: [], emailSchedule: '07:00', mobilePin: '', announcements: [] };
-    }
-    const row = res.rows[0];
-    let recipients = row.email_recipients;
-    if (typeof recipients === 'string') {
-      try { recipients = JSON.parse(recipients); } catch (e) { recipients = []; }
-    }
-    let announcements = row.announcements;
-    if (typeof announcements === 'string') {
-      try { announcements = JSON.parse(announcements); } catch (e) { announcements = []; }
-    }
-    return {
-      emailSender: row.email_sender || '',
-      emailPassword: row.email_password || '',
-      emailRecipients: recipients || [],
-      emailSchedule: row.email_schedule || '07:00',
-      mobilePin: row.mobile_pin || '',
-      announcements: announcements || []
-    };
+    const client = await pool.connect();
+    client.release();
+    dbAvailable = true;
+    console.log('[Storage] Connected to PostgreSQL database.');
   } catch (err) {
-    console.error('Error getting settings from DB:', err);
-    return { emailSender: '', emailPassword: '', emailRecipients: [], emailSchedule: '07:00', mobilePin: '', announcements: [] };
+    dbAvailable = false;
+    console.log('[Storage] PostgreSQL not available. Running in local JSON file mode.');
   }
+  return dbAvailable;
+}
+
+// Database Helpers with Instant JSON Fallback
+async function getSettings() {
+  if (await isDbAvailable()) {
+    try {
+      const res = await pool.query('SELECT * FROM settings WHERE id = 1');
+      if (res.rows.length > 0) {
+        const row = res.rows[0];
+        let recipients = row.email_recipients;
+        if (typeof recipients === 'string') {
+          try { recipients = JSON.parse(recipients); } catch (e) { recipients = []; }
+        }
+        let announcements = row.announcements;
+        if (typeof announcements === 'string') {
+          try { announcements = JSON.parse(announcements); } catch (e) { announcements = []; }
+        }
+        return {
+          emailSender: row.email_sender || '',
+          emailPassword: row.email_password || '',
+          emailRecipients: recipients || [],
+          emailSchedule: row.email_schedule || '07:00',
+          mobilePin: row.mobile_pin || '',
+          announcements: announcements || []
+        };
+      }
+    } catch (err) {
+      dbAvailable = false;
+    }
+  }
+
+  const SETTINGS_FILE = path.join(__dirname, 'data', 'settings.json');
+  if (fs.existsSync(SETTINGS_FILE)) {
+    try {
+      const data = JSON.parse(fs.readFileSync(SETTINGS_FILE, 'utf8'));
+      return {
+        emailSender: data.emailSender || '',
+        emailPassword: data.emailPassword || '',
+        emailRecipients: data.emailRecipients || [],
+        emailSchedule: data.emailSchedule || '07:00',
+        mobilePin: data.mobilePin || '',
+        announcements: data.announcements || []
+      };
+    } catch (e) {
+      console.error('Error reading settings.json:', e);
+    }
+  }
+  return { emailSender: '', emailPassword: '', emailRecipients: [], emailSchedule: '07:00', mobilePin: '', announcements: [] };
 }
 
 async function getAgendas() {
-  try {
-    const res = await pool.query('SELECT * FROM agendas ORDER BY date ASC, id ASC');
-    return res.rows.map(a => ({
-      id: Number(a.id),
-      title: a.title,
-      date: a.date,
-      timeStart: a.time_start,
-      timeEnd: a.time_end,
-      location: a.location,
-      pic: a.pic,
-      unit: a.unit,
-      attendees: a.attendees,
-      category: a.category,
-      status: a.status,
-      color: a.color,
-      catColor: a.cat_color,
-      note: a.note || '',
-      admin: typeof a.admin === 'string' ? JSON.parse(a.admin) : (a.admin || {}),
-      adminFiles: typeof a.admin_files === 'string' ? JSON.parse(a.admin_files) : (a.admin_files || {})
-    }));
-  } catch (err) {
-    console.error('Error getting agendas from DB:', err);
-    return [];
+  if (await isDbAvailable()) {
+    try {
+      const res = await pool.query('SELECT * FROM agendas ORDER BY date ASC, id ASC');
+      return res.rows.map(a => ({
+        id: Number(a.id),
+        title: a.title,
+        date: a.date,
+        timeStart: a.time_start,
+        timeEnd: a.time_end,
+        location: a.location,
+        pic: a.pic,
+        unit: a.unit,
+        attendees: a.attendees,
+        category: a.category,
+        status: a.status,
+        color: a.color,
+        catColor: a.cat_color,
+        note: a.note || '',
+        admin: typeof a.admin === 'string' ? JSON.parse(a.admin) : (a.admin || {}),
+        adminFiles: typeof a.admin_files === 'string' ? JSON.parse(a.admin_files) : (a.admin_files || {})
+      }));
+    } catch (err) {
+      dbAvailable = false;
+    }
   }
+
+  const AGENDAS_FILE = path.join(__dirname, 'data', 'agendas.json');
+  if (fs.existsSync(AGENDAS_FILE)) {
+    try {
+      const data = JSON.parse(fs.readFileSync(AGENDAS_FILE, 'utf8'));
+      console.log(`[Storage] Loaded ${data.length} agendas from agendas.json`);
+      return data;
+    } catch (e) {
+      console.error('Error reading agendas.json:', e);
+    }
+  }
+  return [];
 }
 
 async function saveAgendas(agendasData) {
-  const client = await pool.connect();
-  const cleanStr = (s) => (s ? String(s).replace(/[\r\n]+/g, ' ').trim() : '');
+  if (await isDbAvailable()) {
+    try {
+      const client = await pool.connect();
+      const cleanStr = (s) => (s ? String(s).replace(/[\r\n]+/g, ' ').trim() : '');
 
-  try {
-    await client.query('BEGIN');
-    for (const a of agendasData) {
-      const numericId = Number(a.id);
-      await client.query(
-        `INSERT INTO agendas (id, title, date, time_start, time_end, location, pic, unit, attendees, category, status, color, cat_color, note, admin, admin_files)
-         VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16)
-         ON CONFLICT (id) DO UPDATE SET
-           title = EXCLUDED.title,
-           date = EXCLUDED.date,
-           time_start = EXCLUDED.time_start,
-           time_end = EXCLUDED.time_end,
-           location = EXCLUDED.location,
-           pic = EXCLUDED.pic,
-           unit = EXCLUDED.unit,
-           attendees = EXCLUDED.attendees,
-           category = EXCLUDED.category,
-           status = EXCLUDED.status,
-           color = EXCLUDED.color,
-           cat_color = EXCLUDED.cat_color,
-           note = EXCLUDED.note,
-           admin = EXCLUDED.admin,
-           admin_files = EXCLUDED.admin_files`,
-        [
-          numericId,
-          cleanStr(a.title),
-          a.date,
-          a.timeStart || '',
-          a.timeEnd || '',
-          cleanStr(a.location),
-          cleanStr(a.pic),
-          cleanStr(a.unit),
-          cleanStr(a.attendees),
-          a.category || '',
-          a.status || '',
-          a.color || '',
-          a.catColor || '',
-          a.note || '',
-          JSON.stringify(a.admin || {}),
-          JSON.stringify(a.adminFiles || {})
-        ]
-      );
+      try {
+        await client.query('BEGIN');
+        for (const a of agendasData) {
+          const numericId = Number(a.id);
+          await client.query(
+            `INSERT INTO agendas (id, title, date, time_start, time_end, location, pic, unit, attendees, category, status, color, cat_color, note, admin, admin_files)
+             VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16)
+             ON CONFLICT (id) DO UPDATE SET
+               title = EXCLUDED.title,
+               date = EXCLUDED.date,
+               time_start = EXCLUDED.time_start,
+               time_end = EXCLUDED.time_end,
+               location = EXCLUDED.location,
+               pic = EXCLUDED.pic,
+               unit = EXCLUDED.unit,
+               attendees = EXCLUDED.attendees,
+               category = EXCLUDED.category,
+               status = EXCLUDED.status,
+               color = EXCLUDED.color,
+               cat_color = EXCLUDED.cat_color,
+               note = EXCLUDED.note,
+               admin = EXCLUDED.admin,
+               admin_files = EXCLUDED.admin_files`,
+            [
+              numericId,
+              cleanStr(a.title),
+              a.date,
+              a.timeStart || '',
+              a.timeEnd || '',
+              cleanStr(a.location),
+              cleanStr(a.pic),
+              cleanStr(a.unit),
+              cleanStr(a.attendees),
+              a.category || '',
+              a.status || '',
+              a.color || '',
+              a.catColor || '',
+              a.note || '',
+              JSON.stringify(a.admin || {}),
+              JSON.stringify(a.adminFiles || {})
+            ]
+          );
+        }
+        await client.query('COMMIT');
+        return;
+      } catch (err) {
+        await client.query('ROLLBACK');
+        dbAvailable = false;
+      } finally {
+        client.release();
+      }
+    } catch (err) {
+      dbAvailable = false;
     }
-    await client.query('COMMIT');
-  } catch (err) {
-    await client.query('ROLLBACK');
-    throw err;
-  } finally {
-    client.release();
   }
+
+  const AGENDAS_FILE = path.join(__dirname, 'data', 'agendas.json');
+  let existing = [];
+  if (fs.existsSync(AGENDAS_FILE)) {
+    try { existing = JSON.parse(fs.readFileSync(AGENDAS_FILE, 'utf8')); } catch (e) {}
+  }
+  const map = new Map(existing.map(item => [item.id, item]));
+  agendasData.forEach(item => map.set(item.id, item));
+  const merged = Array.from(map.values());
+  fs.writeFileSync(AGENDAS_FILE, JSON.stringify(merged, null, 2), 'utf8');
 }
 
 // --- AUTH ROUTES ---
 app.post('/api/login', async (req, res) => {
   try {
     const { username, password } = req.body;
-    const userRes = await pool.query('SELECT * FROM users WHERE username = $1', [username]);
-    if (userRes.rows.length === 0) {
+    let user = null;
+
+    if (await isDbAvailable()) {
+      try {
+        const userRes = await pool.query('SELECT * FROM users WHERE username = $1', [username]);
+        if (userRes.rows.length > 0) {
+          user = userRes.rows[0];
+        }
+      } catch (dbErr) {
+        dbAvailable = false;
+      }
+    }
+
+    if (!user) {
+      const SETTINGS_FILE = path.join(__dirname, 'data', 'settings.json');
+      if (fs.existsSync(SETTINGS_FILE)) {
+        try {
+          const settingsData = JSON.parse(fs.readFileSync(SETTINGS_FILE, 'utf8'));
+          if (settingsData.users) {
+            const found = settingsData.users.find(u => u.username === username);
+            if (found) user = found;
+          }
+        } catch (e) {}
+      }
+    }
+
+    if (!user) {
       return res.status(401).json({ error: 'Username atau password salah' });
     }
-    const user = userRes.rows[0];
+
     const validPassword = bcrypt.compareSync(password, user.password);
     if (!validPassword) {
       return res.status(401).json({ error: 'Username atau password salah' });
@@ -193,17 +283,58 @@ app.post('/api/login', async (req, res) => {
 app.post('/api/change-password', authenticateToken, async (req, res) => {
   try {
     const { oldPassword, newPassword } = req.body;
-    const userRes = await pool.query('SELECT * FROM users WHERE id = $1', [req.user.id]);
-    if (userRes.rows.length === 0) return res.status(404).json({ error: 'User not found' });
+    let user = null;
 
-    const user = userRes.rows[0];
+    if (await isDbAvailable()) {
+      try {
+        const userRes = await pool.query('SELECT * FROM users WHERE id = $1', [req.user.id]);
+        if (userRes.rows.length > 0) user = userRes.rows[0];
+      } catch (dbErr) {
+        dbAvailable = false;
+      }
+    }
+
+    if (!user) {
+      const SETTINGS_FILE = path.join(__dirname, 'data', 'settings.json');
+      if (fs.existsSync(SETTINGS_FILE)) {
+        try {
+          const settingsData = JSON.parse(fs.readFileSync(SETTINGS_FILE, 'utf8'));
+          if (settingsData.users) {
+            user = settingsData.users.find(u => u.id === req.user.id);
+          }
+        } catch (e) {}
+      }
+    }
+
+    if (!user) return res.status(404).json({ error: 'User not found' });
+
     const validPassword = bcrypt.compareSync(oldPassword, user.password);
     if (!validPassword) {
       return res.status(400).json({ error: 'Kata sandi lama salah' });
     }
 
     const hashedPassword = bcrypt.hashSync(newPassword, 10);
-    await pool.query('UPDATE users SET password = $1 WHERE id = $2', [hashedPassword, req.user.id]);
+    if (await isDbAvailable()) {
+      try {
+        await pool.query('UPDATE users SET password = $1 WHERE id = $2', [hashedPassword, req.user.id]);
+      } catch (dbErr) {
+        dbAvailable = false;
+      }
+    }
+
+    if (!dbAvailable) {
+      const SETTINGS_FILE = path.join(__dirname, 'data', 'settings.json');
+      if (fs.existsSync(SETTINGS_FILE)) {
+        try {
+          const settingsData = JSON.parse(fs.readFileSync(SETTINGS_FILE, 'utf8'));
+          if (settingsData.users) {
+            const u = settingsData.users.find(x => x.id === req.user.id);
+            if (u) u.password = hashedPassword;
+            fs.writeFileSync(SETTINGS_FILE, JSON.stringify(settingsData, null, 2), 'utf8');
+          }
+        } catch (e) {}
+      }
+    }
     res.json({ success: true });
   } catch (err) {
     console.error('Change password error:', err);
@@ -266,14 +397,21 @@ app.post('/api/agendas/single', authenticateToken, async (req, res) => {
 });
 
 app.delete('/api/agendas/:id', authenticateToken, async (req, res) => {
+  const targetId = Number(req.params.id);
   try {
-    await pool.query('DELETE FROM agendas WHERE id = $1', [Number(req.params.id)]);
-    broadcastEvent('AGENDA_UPDATED');
-    res.json({ success: true });
-  } catch (err) {
-    console.error('Error deleting agenda:', err);
-    res.status(500).json({ error: 'Failed to delete agenda' });
+    await pool.query('DELETE FROM agendas WHERE id = $1', [targetId]);
+  } catch (dbErr) {
+    const AGENDAS_FILE = path.join(__dirname, 'data', 'agendas.json');
+    if (fs.existsSync(AGENDAS_FILE)) {
+      try {
+        const existing = JSON.parse(fs.readFileSync(AGENDAS_FILE, 'utf8'));
+        const filtered = existing.filter(a => Number(a.id) !== targetId);
+        fs.writeFileSync(AGENDAS_FILE, JSON.stringify(filtered, null, 2), 'utf8');
+      } catch (e) {}
+    }
   }
+  broadcastEvent('AGENDA_UPDATED');
+  res.json({ success: true });
 });
 
 // --- FILE UPLOAD & DELETE ROUTES ---
@@ -359,25 +497,40 @@ app.post('/api/verify-pin', async (req, res) => {
 app.post('/api/settings', authenticateToken, async (req, res) => {
   try {
     const { emailSender, emailPassword, emailRecipients, emailSchedule, mobilePin, announcements } = req.body;
-    await pool.query(
-      `INSERT INTO settings (id, email_sender, email_password, email_recipients, email_schedule, mobile_pin, announcements)
-       VALUES (1, $1, $2, $3, $4, $5, $6)
-       ON CONFLICT (id) DO UPDATE SET
-       email_sender = EXCLUDED.email_sender,
-       email_password = EXCLUDED.email_password,
-       email_recipients = EXCLUDED.email_recipients,
-       email_schedule = EXCLUDED.email_schedule,
-       mobile_pin = EXCLUDED.mobile_pin,
-       announcements = EXCLUDED.announcements`,
-      [
-        emailSender !== undefined ? emailSender : '',
-        emailPassword !== undefined ? emailPassword : '',
-        JSON.stringify(emailRecipients || []),
-        emailSchedule !== undefined ? emailSchedule : '07:00',
-        mobilePin !== undefined ? mobilePin : '',
-        JSON.stringify(announcements || [])
-      ]
-    );
+    try {
+      await pool.query(
+        `INSERT INTO settings (id, email_sender, email_password, email_recipients, email_schedule, mobile_pin, announcements)
+         VALUES (1, $1, $2, $3, $4, $5, $6)
+         ON CONFLICT (id) DO UPDATE SET
+         email_sender = EXCLUDED.email_sender,
+         email_password = EXCLUDED.email_password,
+         email_recipients = EXCLUDED.email_recipients,
+         email_schedule = EXCLUDED.email_schedule,
+         mobile_pin = EXCLUDED.mobile_pin,
+         announcements = EXCLUDED.announcements`,
+        [
+          emailSender !== undefined ? emailSender : '',
+          emailPassword !== undefined ? emailPassword : '',
+          JSON.stringify(emailRecipients || []),
+          emailSchedule !== undefined ? emailSchedule : '07:00',
+          mobilePin !== undefined ? mobilePin : '',
+          JSON.stringify(announcements || [])
+        ]
+      );
+    } catch (dbErr) {
+      const SETTINGS_FILE = path.join(__dirname, 'data', 'settings.json');
+      let current = {};
+      if (fs.existsSync(SETTINGS_FILE)) {
+        try { current = JSON.parse(fs.readFileSync(SETTINGS_FILE, 'utf8')); } catch (e) {}
+      }
+      current.emailSender = emailSender !== undefined ? emailSender : (current.emailSender || '');
+      current.emailPassword = emailPassword !== undefined ? emailPassword : (current.emailPassword || '');
+      current.emailRecipients = emailRecipients !== undefined ? emailRecipients : (current.emailRecipients || []);
+      current.emailSchedule = emailSchedule !== undefined ? emailSchedule : (current.emailSchedule || '07:00');
+      current.mobilePin = mobilePin !== undefined ? mobilePin : (current.mobilePin || '');
+      current.announcements = announcements !== undefined ? announcements : (current.announcements || []);
+      fs.writeFileSync(SETTINGS_FILE, JSON.stringify(current, null, 2), 'utf8');
+    }
     res.json({ success: true });
     broadcastEvent('SETTINGS_UPDATED');
     setupCronJob();

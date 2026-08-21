@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ReactDOM from 'react-dom';
 import { XCircle } from 'lucide-react';
 import { useAgenda } from '../context/AgendaContext';
 import PegawaiSelect from './PegawaiSelect';
@@ -91,7 +92,7 @@ const CreateAgendaModal = ({ onClose, agendaToEdit }) => {
   };
 
   const inputStyle = {
-    padding: '0.75rem',
+    padding: '0.45rem 0.65rem',
     borderRadius: '8px',
     border: '1px solid #cbd5e1', // slate-300
     background: 'white',
@@ -99,14 +100,15 @@ const CreateAgendaModal = ({ onClose, agendaToEdit }) => {
     outline: 'none',
     width: '100%',
     fontFamily: 'inherit',
-    boxShadow: 'inset 0 1px 2px rgba(0, 0, 0, 0.05)'
+    fontSize: '0.82rem',
+    boxShadow: 'inset 0 1px 2px rgba(0, 0, 0, 0.04)'
   };
 
   const labelStyle = {
-    fontSize: '0.85rem',
-    fontWeight: '600',
+    fontSize: '0.78rem',
+    fontWeight: '700',
     color: '#475569', // slate-600
-    marginBottom: '0.4rem'
+    marginBottom: '0.2rem'
   };
 
   const formGroupStyle = {
@@ -114,28 +116,28 @@ const CreateAgendaModal = ({ onClose, agendaToEdit }) => {
     flexDirection: 'column'
   };
 
-  return (
+  const modalContent = (
     <div style={{
-      position: 'fixed', top: 0, left: 0, right: 0, bottom: 0,
-      background: 'rgba(15, 23, 42, 0.6)', backdropFilter: 'blur(8px)', WebkitBackdropFilter: 'blur(8px)',
-      zIndex: 2000, display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '1rem'
+      position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, width: '100vw', height: '100vh',
+      background: 'rgba(15, 23, 42, 0.65)', backdropFilter: 'blur(8px)', WebkitBackdropFilter: 'blur(8px)',
+      zIndex: 999999, display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '1rem'
     }}>
       <div style={{
-        background: 'white', borderRadius: '16px', padding: '1.5rem',
-        width: '100%', maxWidth: '600px', maxHeight: '90vh', overflowY: 'auto',
-        boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
+        background: 'white', borderRadius: '14px', padding: '1.1rem 1.35rem',
+        width: '100%', maxWidth: '580px', maxHeight: '90vh', overflowY: 'auto',
+        boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.35)',
         border: '1px solid #e2e8f0', color: '#1e293b'
       }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem', borderBottom: '1px solid #e2e8f0', paddingBottom: '0.75rem' }}>
-          <h3 style={{ fontSize: '1.25rem', fontWeight: '700', color: '#0f172a', margin: 0 }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.75rem', borderBottom: '1px solid #e2e8f0', paddingBottom: '0.5rem' }}>
+          <h3 style={{ fontSize: '1rem', fontWeight: '800', color: '#0f172a', margin: 0 }}>
             {agendaToEdit ? 'Edit Agenda Rapat' : 'Tambah Agenda Rapat Baru'}
           </h3>
-          <button onClick={onClose} style={{ background: 'none', border: 'none', cursor: 'pointer', color: '#64748b' }}>
-            <XCircle size={24} />
+          <button onClick={onClose} style={{ background: 'none', border: 'none', cursor: 'pointer', color: '#64748b', display: 'flex', alignItems: 'center' }}>
+            <XCircle size={20} />
           </button>
         </div>
 
-        <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+        <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '0.65rem' }}>
           <div style={formGroupStyle}>
             <label style={labelStyle}>Judul Agenda Rapat *</label>
             <input
@@ -149,7 +151,7 @@ const CreateAgendaModal = ({ onClose, agendaToEdit }) => {
             />
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.65rem' }}>
             <div style={formGroupStyle}>
               <label style={labelStyle}>Tanggal *</label>
               <input
@@ -175,7 +177,7 @@ const CreateAgendaModal = ({ onClose, agendaToEdit }) => {
             </div>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.65rem' }}>
             <div style={formGroupStyle}>
               <label style={labelStyle}>Waktu Mulai *</label>
               <input
@@ -190,7 +192,7 @@ const CreateAgendaModal = ({ onClose, agendaToEdit }) => {
             <div style={formGroupStyle}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 <label style={labelStyle}>Waktu Selesai {!isSampaiSelesai && '*'}</label>
-                <label style={{ fontSize: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.25rem', cursor: 'pointer', color: 'var(--color-primary-blue)', fontWeight: '600' }}>
+                <label style={{ fontSize: '0.7rem', display: 'flex', alignItems: 'center', gap: '0.2rem', cursor: 'pointer', color: 'var(--color-primary-blue)', fontWeight: '600' }}>
                   <input
                     type="checkbox"
                     checked={isSampaiSelesai}
@@ -221,7 +223,7 @@ const CreateAgendaModal = ({ onClose, agendaToEdit }) => {
               )}
             </div>
           </div>
-          {timeError && <span style={{ color: 'var(--color-status-red)', fontSize: '0.8rem', fontWeight: '600' }}>{timeError}</span>}
+          {timeError && <span style={{ color: 'var(--color-status-red)', fontSize: '0.75rem', fontWeight: '600' }}>{timeError}</span>}
 
           <div style={formGroupStyle}>
             <label style={labelStyle}>Pejabat / Petugas Hadir (PIC)</label>
@@ -248,26 +250,26 @@ const CreateAgendaModal = ({ onClose, agendaToEdit }) => {
           </div>
 
           <div style={formGroupStyle}>
-            <label style={labelStyle}>Catatan / Keterangan Tambahan (Tampil di Mobile)</label>
+            <label style={labelStyle}>Catatan / Keterangan Tambahan</label>
             <textarea
               name="note"
               value={formData.note}
               onChange={handleChange}
-              rows={3}
+              rows={2}
               style={{ ...inputStyle, resize: 'vertical' }}
-              placeholder="Contoh: Peserta membawa laptop dan dokumen fisik. Seragam PDH Harian."
+              placeholder="Contoh: Peserta membawa laptop. Seragam PDH."
             />
           </div>
 
-          <div style={{ padding: '0.75rem 1rem', borderRadius: '10px', background: 'rgba(14,165,233,0.08)', border: '1px solid rgba(14,165,233,0.2)', fontSize: '0.8rem', color: '#0369a1', lineHeight: '1.4' }}>
-            ℹ️ <b>Petunjuk Administrasi:</b> Surat Tugas, Undangan, dan Nota Dinas dapat diunggah & dikelola melalui kolom status di tabel <i>Manajemen Agenda</i>.
+          <div style={{ padding: '0.45rem 0.65rem', borderRadius: '8px', background: 'rgba(14,165,233,0.08)', border: '1px solid rgba(14,165,233,0.2)', fontSize: '0.72rem', color: '#0369a1', lineHeight: '1.3' }}>
+            ℹ️ <b>Petunjuk:</b> Dokumen dapat diunggah melalui kolom tabel <i>Manajemen Agenda</i>.
           </div>
 
-          <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '1rem', marginTop: '0.5rem' }}>
-            <button type="button" onClick={onClose} disabled={isSubmitting} style={{ padding: '0.75rem 1.5rem', borderRadius: '8px', border: '1px solid #cbd5e1', background: 'white', color: '#334155', fontWeight: '600', cursor: isSubmitting ? 'not-allowed' : 'pointer', boxShadow: '0 2px 4px rgba(0,0,0,0.05)' }}>
+          <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '0.6rem', marginTop: '0.35rem' }}>
+            <button type="button" onClick={onClose} disabled={isSubmitting} style={{ padding: '0.45rem 1rem', borderRadius: '8px', border: '1px solid #cbd5e1', background: 'white', color: '#334155', fontWeight: '600', fontSize: '0.8rem', cursor: isSubmitting ? 'not-allowed' : 'pointer' }}>
               Batal
             </button>
-            <button type="submit" disabled={isSubmitting} style={{ padding: '0.75rem 1.5rem', borderRadius: '8px', border: 'none', background: 'linear-gradient(135deg, var(--color-primary-blue), var(--color-primary-green))', color: 'white', fontWeight: '600', boxShadow: '0 4px 10px rgba(14,165,233,0.3)', cursor: isSubmitting ? 'not-allowed' : 'pointer', opacity: isSubmitting ? 0.7 : 1 }}>
+            <button type="submit" disabled={isSubmitting} style={{ padding: '0.45rem 1.1rem', borderRadius: '8px', border: 'none', background: 'linear-gradient(135deg, var(--color-primary-blue), var(--color-primary-green))', color: 'white', fontWeight: '700', fontSize: '0.8rem', boxShadow: '0 3px 10px rgba(14,165,233,0.3)', cursor: isSubmitting ? 'not-allowed' : 'pointer', opacity: isSubmitting ? 0.7 : 1 }}>
               {isSubmitting ? 'Menyimpan...' : (agendaToEdit ? 'Simpan Perubahan' : 'Simpan Agenda')}
             </button>
           </div>
@@ -275,6 +277,8 @@ const CreateAgendaModal = ({ onClose, agendaToEdit }) => {
       </div>
     </div>
   );
+
+  return ReactDOM.createPortal(modalContent, document.body);
 };
 
 export default CreateAgendaModal;

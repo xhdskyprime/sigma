@@ -2636,8 +2636,8 @@
     "unit": "",
     "attendees": "",
     "category": "Internal",
-    "status": "Acara Hari Ini",
-    "color": "var(--color-status-yellow)",
+    "status": "Selesai",
+    "color": "var(--color-status-green)",
     "catColor": "var(--color-primary-blue)",
     "note": "",
     "admin": {
@@ -2667,8 +2667,8 @@
     "unit": "",
     "attendees": "MURNALISA DANI,SAP,M.Si; Muhammad Rae Febrian, SKM",
     "category": "Internal",
-    "status": "Acara Hari Ini",
-    "color": "var(--color-status-yellow)",
+    "status": "Selesai",
+    "color": "var(--color-status-green)",
     "catColor": "var(--color-primary-blue)",
     "note": "",
     "admin": {
@@ -2698,8 +2698,8 @@
     "unit": "RSUD Tigaraksa",
     "attendees": "Seluruh Pengurus & Anggota KORPRI",
     "category": "Internal",
-    "status": "Acara Hari Ini",
-    "color": "var(--color-status-yellow)",
+    "status": "Selesai",
+    "color": "var(--color-status-green)",
     "catColor": "var(--color-primary-blue)",
     "note": "",
     "admin": {
@@ -2726,8 +2726,8 @@
     "unit": "Diklat",
     "attendees": "Dita Pamungkas, A.Md.KL, Aprilia Wulansari, A.Md.Kep",
     "category": "Internal",
-    "status": "Akan Dimulai",
-    "color": "var(--color-primary-blue)",
+    "status": "Selesai",
+    "color": "var(--color-status-green)",
     "catColor": "var(--color-primary-blue)",
     "note": "",
     "admin": {
@@ -2754,8 +2754,8 @@
     "unit": "",
     "attendees": "Tony Tristan Saputra S.Kom; Abie Perdana Kusuma, S.Kom",
     "category": "Internal",
-    "status": "Akan Dimulai",
-    "color": "var(--color-primary-blue)",
+    "status": "Selesai",
+    "color": "var(--color-status-green)",
     "catColor": "var(--color-primary-blue)",
     "note": "",
     "admin": {
@@ -2785,8 +2785,8 @@
     "unit": "",
     "attendees": "HENNY, S.Kep.,Ns.,M.M.; DHIO GUSTRIANDI,S.Sos",
     "category": "Internal",
-    "status": "Akan Dimulai",
-    "color": "var(--color-primary-blue)",
+    "status": "Selesai",
+    "color": "var(--color-status-green)",
     "catColor": "var(--color-primary-blue)",
     "note": "",
     "admin": {
@@ -2816,8 +2816,8 @@
     "unit": "Pelayanan",
     "attendees": "drg.CHAIRUMI ALFISYAHR, MARS",
     "category": "Internal",
-    "status": "Akan Dimulai",
-    "color": "var(--color-primary-blue)",
+    "status": "Selesai",
+    "color": "var(--color-status-green)",
     "catColor": "var(--color-primary-blue)",
     "note": "",
     "admin": {
@@ -2844,8 +2844,8 @@
     "unit": "Pelayanan",
     "attendees": "drg.CHAIRUMI ALFISYAHR, MARS",
     "category": "Internal",
-    "status": "Akan Dimulai",
-    "color": "var(--color-primary-blue)",
+    "status": "Selesai",
+    "color": "var(--color-status-green)",
     "catColor": "var(--color-primary-blue)",
     "note": "",
     "admin": {
@@ -2872,8 +2872,8 @@
     "unit": "",
     "attendees": "HENDRO SUBROTO,SKP,MARS",
     "category": "Internal",
-    "status": "Akan Dimulai",
-    "color": "var(--color-primary-blue)",
+    "status": "Selesai",
+    "color": "var(--color-status-green)",
     "catColor": "var(--color-primary-blue)",
     "note": "",
     "admin": {
@@ -2903,8 +2903,8 @@
     "unit": "",
     "attendees": "",
     "category": "Internal",
-    "status": "Akan Dimulai",
-    "color": "var(--color-primary-blue)",
+    "status": "Selesai",
+    "color": "var(--color-status-green)",
     "catColor": "var(--color-primary-blue)",
     "note": "",
     "admin": {
@@ -2952,6 +2952,40 @@
       },
       "notaDinas": null,
       "suratTugas": null
+    }
+  },
+  {
+    "title": "test",
+    "date": "2026-08-20",
+    "timeStart": "08:00",
+    "timeEnd": "09:00",
+    "location": "aula laundry",
+    "pic": "dr. Muhammad Faridzi Fikri,MKM",
+    "unit": "",
+    "attendees": "dr. Muhammad Faridzi Fikri,MKM",
+    "category": "Internal",
+    "status": "Selesai",
+    "note": "",
+    "color": "var(--color-status-green)",
+    "catColor": "var(--color-primary-blue)",
+    "id": 1787202053847,
+    "admin": {
+      "suratTugas": "Sudah Selesai",
+      "undangan": "Sudah Selesai",
+      "notaDinas": "Belum Dibuat",
+      "status": "Perlu Tindak Lanjut",
+      "statusColor": "var(--color-status-yellow)"
+    },
+    "adminFiles": {
+      "suratTugas": {
+        "name": "CamScanner 08-19-2026 14.39.37.pdf",
+        "url": "/uploads/surat_tugas/suratTugas_agenda1787202053847_1787202071628_CamScanner_08-19-2026_14.39.37.pdf"
+      },
+      "undangan": {
+        "name": "RSUD Tigaraksa - OutputTaxInvoice-631aa48c-aadf-43ed-8531-5f5ea747f54e-0021551072411000-02002600332087208-1000000007731304.pdf",
+        "url": "/uploads/undangan/undangan_agenda1787202053847_1787202080949_RSUD_Tigaraksa_-_OutputTaxInvoice-631aa48c-aadf-43ed-8531-5f5ea747f54e-0021551072411000-02002600332087208-1000000007731304.pdf"
+      },
+      "notaDinas": null
     }
   }
 ]

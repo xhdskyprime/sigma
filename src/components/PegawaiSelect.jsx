@@ -58,29 +58,29 @@ const PegawaiSelect = ({ value, onChange }) => {
   return (
     <div ref={wrapperRef} style={{ position: 'relative', width: '100%' }}>
       <div style={{
-        minHeight: '45px',
-        padding: '0.4rem',
+        minHeight: '34px',
+        padding: '0.25rem 0.4rem',
         borderRadius: '8px',
         border: '1px solid #cbd5e1',
         background: 'white',
         display: 'flex',
         flexWrap: 'wrap',
-        gap: '0.5rem',
+        gap: '0.35rem',
         alignItems: 'center',
-        boxShadow: 'inset 0 1px 2px rgba(0, 0, 0, 0.05)',
+        boxShadow: 'inset 0 1px 2px rgba(0, 0, 0, 0.04)',
         cursor: 'text'
       }} onClick={() => setIsOpen(true)}>
         {selectedList.map((item, idx) => (
           <div key={idx} style={{
             display: 'flex',
             alignItems: 'center',
-            gap: '0.25rem',
+            gap: '0.2rem',
             background: 'rgba(14, 165, 233, 0.12)',
             color: 'var(--color-primary-blue)',
             border: '1px solid rgba(14, 165, 233, 0.25)',
-            padding: '0.25rem 0.5rem',
-            borderRadius: '6px',
-            fontSize: '0.85rem',
+            padding: '0.15rem 0.45rem',
+            borderRadius: '5px',
+            fontSize: '0.75rem',
             fontWeight: '600'
           }}>
             {item}
@@ -89,7 +89,7 @@ const PegawaiSelect = ({ value, onChange }) => {
               onClick={(e) => { e.stopPropagation(); handleRemove(item); }}
               style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 0, display: 'flex', alignItems: 'center', color: 'var(--color-primary-blue)' }}
             >
-              <X size={14} />
+              <X size={12} />
             </button>
           </div>
         ))}
@@ -103,10 +103,11 @@ const PegawaiSelect = ({ value, onChange }) => {
           }}
           onFocus={() => setIsOpen(true)}
           onKeyDown={handleKeyDown}
-          placeholder={selectedList.length === 0 ? "Cari nama pegawai RSUD atau ketik manual lalu Enter..." : "Ketik untuk tambah pegawai lagi..."}
+          placeholder={selectedList.length === 0 ? "Cari nama pegawai RSUD atau ketik manual..." : "Ketik untuk tambah pegawai lagi..."}
           style={{
             flex: 1,
-            minWidth: '180px',
+            minWidth: '150px',
+            fontSize: '0.8rem',
             border: 'none',
             outline: 'none',
             background: 'transparent',

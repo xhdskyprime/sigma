@@ -66,50 +66,50 @@ const Dashboard = () => {
   }));
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
       
       {/* Action Header */}
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <div>
-          <h2 style={{ fontSize: '1.35rem', fontWeight: '800', margin: 0 }}>Dashboard Executive</h2>
-          <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem', margin: 0 }}>Ringkasan dan pemantauan real-time seluruh kegiatan RSUD Tigaraksa.</p>
+          <h2 style={{ fontSize: '1.2rem', fontWeight: '800', margin: 0, color: 'var(--text-main)' }}>Dashboard Executive</h2>
+          <p style={{ color: 'var(--text-muted)', fontSize: '0.8rem', margin: '0.1rem 0 0 0' }}>Ringkasan dan pemantauan real-time seluruh kegiatan RSUD Tigaraksa.</p>
         </div>
       </div>
 
       {/* Stat Cards */}
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem' }}>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '0.75rem' }}>
         {[
-          { title: 'Total Semua Agenda', count: stats.total, icon: <FcSurvey size={36} />, color: 'var(--color-primary-blue)' },
-          { title: 'Selesai', count: stats.selesai, icon: <FcCheckmark size={36} />, color: 'var(--color-status-green)' },
-          { title: 'Acara Hari Ini', count: stats.berlangsung, icon: <FcVideoProjector size={36} />, color: 'var(--color-status-blue)' },
-          { title: 'Akan Dimulai', count: stats.akanDimulai, icon: <FcClock size={36} />, color: 'var(--color-status-yellow)' },
-          { title: 'Ditunda / Dibatalkan', count: stats.tertunda, icon: <FcHighPriority size={36} />, color: 'var(--color-status-red)' }
+          { title: 'Total Semua Agenda', count: stats.total, icon: <FcSurvey size={28} />, color: 'var(--color-primary-blue)' },
+          { title: 'Selesai', count: stats.selesai, icon: <FcCheckmark size={28} />, color: 'var(--color-status-green)' },
+          { title: 'Acara Hari Ini', count: stats.berlangsung, icon: <FcVideoProjector size={28} />, color: 'var(--color-status-blue)' },
+          { title: 'Akan Dimulai', count: stats.akanDimulai, icon: <FcClock size={28} />, color: 'var(--color-status-yellow)' },
+          { title: 'Ditunda / Dibatalkan', count: stats.tertunda, icon: <FcHighPriority size={28} />, color: 'var(--color-status-red)' }
         ].map((stat, index) => (
-          <div key={index} className="card" style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-            <div style={{ padding: '0.75rem', borderRadius: '50%', backgroundColor: `${stat.color}15`, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+          <div key={index} className="card" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', padding: '0.75rem 1rem' }}>
+            <div style={{ padding: '0.5rem', borderRadius: '50%', backgroundColor: `${stat.color}15`, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
               {stat.icon}
             </div>
             <div>
-              <div style={{ fontSize: '1.6rem', fontWeight: '800', color: stat.color }}>{stat.count}</div>
-              <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)', fontWeight: '600' }}>{stat.title}</div>
+              <div style={{ fontSize: '1.3rem', fontWeight: '800', color: stat.color, lineHeight: 1 }}>{stat.count}</div>
+              <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', fontWeight: '600', marginTop: '0.15rem' }}>{stat.title}</div>
             </div>
           </div>
         ))}
       </div>
 
-      <div className="dashboard-grid">
+      <div className="dashboard-grid" style={{ gap: '1rem' }}>
         {/* Agenda Hari Ini */}
-        <div className="card" style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+        <div className="card" style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', padding: '1rem' }}>
           <div className="flex justify-between items-center">
-            <h2 style={{ fontSize: '1.1rem', fontWeight: '700', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-              <Calendar size={20} color="var(--color-primary-blue)" /> 
+            <h2 style={{ fontSize: '0.95rem', fontWeight: '700', display: 'flex', alignItems: 'center', gap: '0.4rem', margin: 0 }}>
+              <Calendar size={18} color="var(--color-primary-blue)" /> 
               Agenda Hari Ini ({todayAgendas.length})
             </h2>
           </div>
           
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', maxHeight: '350px', overflowY: 'auto' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem', maxHeight: '300px', overflowY: 'auto' }}>
             {todayAgendas.length === 0 ? (
-              <div style={{ padding: '2rem', textAlign: 'center', color: 'var(--text-muted)', fontStyle: 'italic' }}>
+              <div style={{ padding: '1.5rem', textAlign: 'center', color: 'var(--text-muted)', fontStyle: 'italic', fontSize: '0.82rem' }}>
                 Tidak ada kegiatan rapat terjadwal untuk hari ini.
               </div>
             ) : todayAgendas.map((agenda) => (
@@ -118,36 +118,36 @@ const Dashboard = () => {
                 onClick={() => setSelectedAgenda(agenda)}
                 style={{ 
                   display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-                  padding: '1rem', border: '1px solid var(--border-glass)', borderRadius: 'var(--radius-md)',
-                  borderLeft: `5px solid ${agenda.color}`, cursor: 'pointer', background: 'rgba(255,255,255,0.03)'
+                  padding: '0.75rem', border: '1px solid var(--border-glass)', borderRadius: '10px',
+                  borderLeft: `4px solid ${agenda.color}`, cursor: 'pointer', background: 'rgba(255,255,255,0.03)'
                 }}
               >
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
-                  <span style={{ fontWeight: '700', fontSize: '0.95rem' }}>{agenda.title}</span>
-                  <div className="flex items-center gap-4" style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>
-                    <span className="flex items-center gap-1"><Clock size={14} color="var(--color-primary-blue)"/> {agenda.timeStart} - {agenda.timeEnd} WIB</span>
-                    <span className="flex items-center gap-1"><MapPin size={14} color="var(--color-status-red)"/> {agenda.location}</span>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.25rem' }}>
+                  <span style={{ fontWeight: '700', fontSize: '0.85rem' }}>{agenda.title}</span>
+                  <div className="flex items-center gap-3" style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>
+                    <span className="flex items-center gap-1"><Clock size={13} color="var(--color-primary-blue)"/> {agenda.timeStart} - {agenda.timeEnd} WIB</span>
+                    <span className="flex items-center gap-1"><MapPin size={13} color="var(--color-status-red)"/> {agenda.location}</span>
                   </div>
                 </div>
-                <span className="badge" style={{ backgroundColor: agenda.color, fontSize: '0.8rem', padding: '0.4rem 0.8rem' }}>{agenda.status}</span>
+                <span className="badge" style={{ backgroundColor: agenda.color, fontSize: '0.7rem', padding: '0.25rem 0.6rem' }}>{agenda.status}</span>
               </div>
             ))}
           </div>
         </div>
 
         {/* Category Pie Chart */}
-        <div className="card" style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-          <h2 style={{ fontSize: '1.1rem', fontWeight: '700' }}>Distribusi Kategori Agenda</h2>
-          <div style={{ height: '250px' }}>
+        <div className="card" style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', padding: '1rem' }}>
+          <h2 style={{ fontSize: '0.95rem', fontWeight: '700', margin: 0 }}>Distribusi Kategori Agenda</h2>
+          <div style={{ height: '220px' }}>
             <ResponsiveContainer width="100%" height="100%">
               <PieChart>
-                <Pie data={chartDataPie} cx="50%" cy="50%" innerRadius={55} outerRadius={80} paddingAngle={5} dataKey="value">
+                <Pie data={chartDataPie} cx="50%" cy="50%" innerRadius={45} outerRadius={70} paddingAngle={5} dataKey="value">
                   {chartDataPie.map((entry, index) => (
                     <Cell key={`cell-${index}`} fill={entry.color} />
                   ))}
                 </Pie>
-                <Tooltip contentStyle={{ backgroundColor: 'var(--bg-main)', borderRadius: '8px', border: '1px solid var(--border-glass)', color: 'var(--text-main)' }}/>
-                <Legend />
+                <Tooltip contentStyle={{ backgroundColor: 'var(--bg-main)', borderRadius: '8px', border: '1px solid var(--border-glass)', color: 'var(--text-main)', fontSize: '0.75rem' }}/>
+                <Legend wrapperStyle={{ fontSize: '0.75rem' }} />
               </PieChart>
             </ResponsiveContainer>
           </div>
@@ -155,17 +155,17 @@ const Dashboard = () => {
       </div>
 
       {/* Weekly Bar Chart */}
-      <div className="dashboard-grid" style={{ gridTemplateColumns: '1fr' }}>
-        <div className="card" style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-          <h2 style={{ fontSize: '1.1rem', fontWeight: '700' }}>Frekuensi Agenda Minggu Ini</h2>
-          <div style={{ height: '220px' }}>
+      <div className="dashboard-grid" style={{ gridTemplateColumns: '1fr', gap: '1rem' }}>
+        <div className="card" style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', padding: '1rem' }}>
+          <h2 style={{ fontSize: '0.95rem', fontWeight: '700', margin: 0 }}>Frekuensi Agenda Minggu Ini</h2>
+          <div style={{ height: '190px' }}>
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={chartDataBar} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
                 <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="var(--border-glass)" />
-                <XAxis dataKey="name" tick={{ fontSize: 12, fill: 'var(--text-muted)' }} axisLine={false} tickLine={false} />
-                <YAxis tick={{ fontSize: 12, fill: 'var(--text-muted)' }} axisLine={false} tickLine={false} allowDecimals={false} />
-                <Tooltip cursor={{ fill: 'rgba(255,255,255,0.05)' }} contentStyle={{ backgroundColor: 'var(--bg-main)', borderColor: 'var(--border-glass)', color: 'var(--text-main)', borderRadius: '8px' }} />
-                <Bar dataKey="kegiatan" fill="var(--color-primary-blue)" radius={[6, 6, 0, 0]} barSize={32} />
+                <XAxis dataKey="name" tick={{ fontSize: 11, fill: 'var(--text-muted)' }} axisLine={false} tickLine={false} />
+                <YAxis tick={{ fontSize: 11, fill: 'var(--text-muted)' }} axisLine={false} tickLine={false} allowDecimals={false} />
+                <Tooltip cursor={{ fill: 'rgba(255,255,255,0.05)' }} contentStyle={{ backgroundColor: 'var(--bg-main)', borderColor: 'var(--border-glass)', color: 'var(--text-main)', borderRadius: '8px', fontSize: '0.75rem' }} />
+                <Bar dataKey="kegiatan" fill="var(--color-primary-blue)" radius={[5, 5, 0, 0]} barSize={26} />
               </BarChart>
             </ResponsiveContainer>
           </div>

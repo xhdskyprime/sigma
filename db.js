@@ -7,6 +7,7 @@ const connectionString = process.env.DATABASE_URL || 'postgresql://postgres:pass
 
 const pool = new Pool({
   connectionString,
+  connectionTimeoutMillis: 1000,
 });
 
 pool.on('error', (err) => {

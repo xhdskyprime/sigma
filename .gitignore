@@ -17,6 +17,11 @@ dist-ssr
 # Scratch files
 scratch/
 
+# Uploaded files
+uploads/
+!uploads/.gitkeep
+temp_out.json
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
